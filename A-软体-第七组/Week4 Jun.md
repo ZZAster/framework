@@ -11,7 +11,7 @@ The easiest way to get started is through NuGet. Search for "Accord.NET" in the 
 
 ### 1.1.2 The content of Accord.NET framework 3.7
 
-![](framework/A-软体-第七组/Picture-framework/content.png)
+![](https://raw.githubusercontent.com/ZZAster/framework/development/A-%E8%BD%AF%E4%BD%93-%E7%AC%AC%E4%B8%83%E7%BB%84/Picture-framework/content.png)
 
 Externals contain some auxiliary component, Samples is the source code of cases, Setup is the installed program, and Sources is the code of project. Source code, Unit Tests is the unit test code.
 

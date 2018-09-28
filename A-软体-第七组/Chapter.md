@@ -1,4 +1,4 @@
-﻿# Accord.NET - A Machine Learning Framework
+# Accord.NET - A Machine Learning Framework
 ![Accord.NET](https://raw.githubusercontent.com/ZZAster/framework/development/A-软体-第七组/Picture-framework/accord-logo.png)
 
 ---
@@ -22,8 +22,35 @@ The Accord.NET is a framework for scientific computing in .NET which is extended
 This chapter aims at analys Accord.NET Framework as a software system. Thus, /* the summary of the entire article structure *(有待进行修改补充以及添加引用)* */
 
 ---
-# Stackholders
+# Stakeholders
+As a a project home on GitHub, Accord.NET has many stakeholders. The role of Accord.NET is mainly reflected in providing libraries for .NET applications. The libraries are below:  
+
+* Scientific computing  
+* Signal and image processing  
+* Support libraries  
+
+*Table1:The StakeHolders of Accord.NET*  
+
+| Stakeholder class | Description |
+|---|---|
+| Acquirers | The original author is César Roberto de Souza. The offical site of this software accepts donations from users. |
+| Communicators | The team of the software has a mailbox, feedback@accord-framework.net to get the feedback from users. The developers of the team are also the communicators. Besides, users can talk with each others on the community. |
+| Developer | There are 11 active contributors on GitHub in the past 12 months. This project has a relatively large team, in the top 10% of all project teams on Open Hub. And so far, there are 72 contributors in the history of the software|
+| Tester | All the bugs can be reported by posted on the community or mailed to the team. The menbers of the team or others will pick up the problem. |
+| Users | Accord.NET has many kinds of users. Take professionals for an example, there are many essays published in the world. It's a very famous project. |
+| Maintainers | The application is maintained by the developing team with decreasing Y-O-Y commits. The rule and standard will be confirmed by the team. |
+| Competitors | There are some similar project, such as SHOUGUN, CVWS.NET, Emgu CV and so on.  |
+
+*Table	3:	Most	active	contributors	in	trems	of	number	of	commits. *
+
+| Contributor | 12 Month Commits | All Time Commits | Language |
+|---|---|---|---|
+| cesarsouza | 331 | 2126 | C# |
+| AlexJCross | 9 | 73 | XML |
+| Anders Gusuafsson | 0 | 41 | XML |
+| Alex Risman | 0 | 24 | C# |
+
+*(缺少图片的完善，以及Power And Interest的分析)*
 
 ---
 # Context View
-

@@ -68,22 +68,22 @@ According to the introduction of Accord.NET's official website, Accord.NET Frame
 And we can see that it has sufficient libaries which can solve related problems about machine learning:
 
 
->- Scientific Computing
-    - Accord.Math
-    - Accord.Statistics
-    - Accord.MachineLearning
-    - Accord.Neuro
+>- Scientific Computing<br>
+    - Accord.Math<br>
+    - Accord.Statistics<br>
+    - Accord.MachineLearning<br>
+    - Accord.Neuro<br>
 <br>
-- Signal and Image Processing
-    - Accord.Imaging
-    - Accord.Audio
-    - Accord.Vision
+- Signal and Image Processing<br>
+    - Accord.Imaging<br>
+    - Accord.Audio<br>
+    - Accord.Vision<br>
 <br>
-- Support libraries
-    - Accord.Controls
-    - Accord.Controls.Imaging
-    - Accord.Controls.Audio
-    - Accord.Controls.Vision
+- Support libraries<br>
+    - Accord.Controls<br>
+    - Accord.Controls.Imaging<br>
+    - Accord.Controls.Audio<br>
+    - Accord.Controls.Vision<br>
 
 ## External Entities
 The relationship between Accord.NET Framwork and outside envoriment can be showed in Figure 3.
@@ -105,10 +105,10 @@ As a machine learning framework specifically developed for .NET, Accord.NET has 
 We can see from above that Accord.NET can be building with VS and Mono on three mainly Operation Systems(Windows, Linux and OS X). There we only shows the dependencies of VS 2017, Linux and OS X:
 
 - With Visual Studio 2017
->Please download and install the following dependencies:
-[T4 Toolbox for Visual Studio 2017](https://github.com/hagronnestad/T4Toolbox/releases/tag/vs2017-b1)
-[Sandcastle Help File Builder (with VS2017 extension)](https://github.com/EWSoftware/SHFB/releases)
-[NUnit 3 Test Adapter](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.NUnit3TestAdapter)
+>Please download and install the following dependencies:<br>
+[T4 Toolbox for Visual Studio 2017](https://github.com/hagronnestad/T4Toolbox/releases/tag/vs2017-b1)<br>
+[Sandcastle Help File Builder (with VS2017 extension)](https://github.com/EWSoftware/SHFB/releases)<br>
+[NUnit 3 Test Adapter](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.NUnit3TestAdapter)<br>
 [Visual C++ Redistributable for Visual Studio 2015](https://www.microsoft.com/en-us/download/details.aspx?id=48145&751be11f-ede8-5a0c-058c-2ee190a24fa6) (both x64 and x86)
 
 - With Mono in Linux

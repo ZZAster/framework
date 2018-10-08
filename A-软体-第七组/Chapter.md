@@ -1,4 +1,4 @@
-﻿# Accord.NET - A Machine Learning Framework
+# Accord.NET - A Machine Learning Framework
 ![Accord.NET](https://raw.githubusercontent.com/ZZAster/framework/development/A-软体-第七组/Picture-framework/accord-logo.png)
 
 ---
@@ -33,12 +33,12 @@ As a a project home on GitHub, Accord.NET has many stakeholders. The role of Acc
 
 | Stakeholder class | Description |
 |---|---|
-| Acquirers | The original author is César Roberto de Souza. The offical site of this software accepts donations from users. |
+| Acquirers | Now it's a open source project, and the cost is based on the donations. The original author is César Roberto de Souza. |
 | Communicators | The team of the software has a mailbox, feedback@accord-framework.net to get the feedback from users. The developers of the team are also the communicators. Besides, users can talk with each others on the community. |
 | Developer | There are 11 active contributors on GitHub in the past 12 months. This project has a relatively large team, in the top 10% of all project teams on Open Hub. And so far, there are 72 contributors in the history of the software. |
 | Tester | All the bugs can be reported by posted on the community or mailed to the team. The menbers of the team or others will pick up the problem. |
 | Users | Accord.NET has many kinds of users. Take professionals for an example, there are many essays published in the world. It's a very famous project. And it can be used to build other software. |
-| Maintainers | The application is maintained by the developing team with decreasing Y-O-Y commits. The rule and standard will be confirmed by the team. |
+| Maintainers | The rule and standard will be confirmed by the team. The application is maintained by the developing team with decreasing Y-O-Y commits. Over the last twelve months, it has seen a substantial decrease in development activity.|
 | Competitors | There are some similar project, such as SHOUGUN, CVWS.NET, Emgu CV and so on.  |
 | Learners | This project is a open source project, it provides learners a lot of algorithms to learn about machine learning. |
 

@@ -73,13 +73,13 @@ And we can see that it has sufficient libaries which can solve related problems 
     - Accord.Statistics<br>
     - Accord.MachineLearning<br>
     - Accord.Neuro<br>
-<br>
-- Signal and Image Processing<br>
+    
+>- Signal and Image Processing<br>
     - Accord.Imaging<br>
     - Accord.Audio<br>
     - Accord.Vision<br>
-<br>
-- Support libraries<br>
+
+>- Support libraries<br>
     - Accord.Controls<br>
     - Accord.Controls.Imaging<br>
     - Accord.Controls.Audio<br>

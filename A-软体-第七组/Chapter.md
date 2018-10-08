@@ -1,4 +1,4 @@
-# Accord.NET - A Machine Learning Framework
+﻿# Accord.NET - A Machine Learning Framework
 ![Accord.NET](https://raw.githubusercontent.com/ZZAster/framework/development/A-软体-第七组/Picture-framework/accord-logo.png)
 
 ---
@@ -55,3 +55,107 @@ As a a project home on GitHub, Accord.NET has many stakeholders. The role of Acc
 
 ---
 # Context View
+Next we will introduce the context view of Accord.NET Framework which defines the relationships, dependencies, and interactions between the system and its environment. 
+
+This desribe what the system does and does not do; where the boundaries are between it and the outside world; and how the system interacts with other systems, orgnizations, add people across these boundaries.
+
+## System Scope
+According to the introduction of Accord.NET's official website, Accord.NET Framework defined as a ".NET machine learning framework combined with audio and image processing libraries completely written in C#." 
+
+"Machine learning made in a minute.", The website of Accord.NET also describe the application direction and design concept this system.
+> It is a complete framework for building production-grade computer vision, computer audition,     signal processing and statistics applications even for commercial use. 
+
+And we can see that it has sufficient libaries which can solve related problems about machine learning:
+
+
+>- Scientific Computing
+    - Accord.Math
+    - Accord.Statistics
+    - Accord.MachineLearning
+    - Accord.Neuro
+<br>
+- Signal and Image Processing
+    - Accord.Imaging
+    - Accord.Audio
+    - Accord.Vision
+<br>
+- Support libraries
+    - Accord.Controls
+    - Accord.Controls.Imaging
+    - Accord.Controls.Audio
+    - Accord.Controls.Vision
+
+## External Entities
+The relationship between Accord.NET Framwork and outside envoriment can be showed in Figure 3.
+
+*Figure3 Context View*
+
+As the picture showed, external entities can be divided in groups as follows:
+
+### Competitors
+
+As a machine learning framework specifically developed for .NET, Accord.NET has many competitors in the field. For example, Tensorflow is a powerful machine learning framework developed by Google and .NET Framwork application can install Tensorflowsharp through NuGet to complete the call to function of tensorflow framework. And there also are other competitors such as paddlepaddle of baidu, EmguCV and so on.
+
+### Developing languages and Software Platform
+
+- Languages: C#
+- Platform : Accord.NET can be installed on Linux and OS X with Mono, and in windows, it can runs through Visual Studio which is the main IDE of Accord.NET.
+
+### Building and Dependencies
+We can see from above that Accord.NET can be building with VS and Mono on three mainly Operation Systems(Windows, Linux and OS X). There we only shows the dependencies of VS 2017, Linux and OS X:
+
+- With Visual Studio 2017
+>Please download and install the following dependencies:
+[T4 Toolbox for Visual Studio 2017](https://github.com/hagronnestad/T4Toolbox/releases/tag/vs2017-b1)
+[Sandcastle Help File Builder (with VS2017 extension)](https://github.com/EWSoftware/SHFB/releases)
+[NUnit 3 Test Adapter](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.NUnit3TestAdapter)
+[Visual C++ Redistributable for Visual Studio 2015](https://www.microsoft.com/en-us/download/details.aspx?id=48145&751be11f-ede8-5a0c-058c-2ee190a24fa6) (both x64 and x86)
+
+- With Mono in Linux
+```bash
+# Install Mono
+sudo apt-get install mono-complete monodevelop monodevelop-nunit git autoconf make
+
+# Clone the repository
+git clone https://github.com/accord-net/framework.git
+
+# Enter the directory
+cd framework
+
+# Build the framework solution using Mono
+./autogen.sh
+make build
+make samples
+make test
+```
+
+- With Mono in OS X
+
+```bash
+# Install Mono
+brew update
+brew cask install mono-mdk pkg-config automake
+
+# Clone the repository
+git clone https://github.com/accord-net/framework.git
+
+# Enter the directory
+cd framework
+
+# Set some environment variables with OSX-specific paths
+export PKG_CONFIG_PATH=/Library/Frameworks/Mono.framework/Versions/Current/lib/pkgconfig/
+export MONO=/Library/Frameworks/Mono.framework/Versions/Current/bin/mono
+export XBUILD=/Library/Frameworks/Mono.framework/Versions/Current/bin/xbuild
+
+# Build the framework solution using Mono
+./autogen.sh
+make build
+make samples
+make test
+```
+### Other Entities
+- Version Control: GitHub
+- Testing tools: Almost all [testing applications](https://github.com/ZZAster/framework/tree/development/Tools) are runs on Visual Studio written in C#.
+
+
+---

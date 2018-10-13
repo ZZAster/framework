@@ -1,6 +1,6 @@
 # Accord.NET - A Machine Learning Framework
 **By [Gong Zheng](https://github.com/ZZAster), [Lai MingJun](https://github.com/JunSerena), [Cheng YiXing](https://github.com/CCIyx) and [Tang ZhengTing](https://github.com/leotzt).**<br>
-*Wuhan University*
+*Wuhan University*<br>
 ![Accord.NET](https://raw.githubusercontent.com/ZZAster/framework/development/A-软体-第七组/Picture-framework/accord-logo.png)<br>
 *The Accord.NET logo taken from it's [official website](http://accord-framework.net/index.html).*
 

@@ -97,7 +97,7 @@ And we can see that it has sufficient libaries which can solve related problems 
 
 ## External Entities
 The relationship between Accord.NET Framwork and outside envoriment can be showed in Figure 3.<br>
-![Accord.NET](https://raw.githubusercontent.com/ZZAster/framework/development/A-软体-第七组/Picture-framework/context_view.png)<br>
+![Accord.NET](https://github.com/ZZAster/framework/blob/development/A-%E8%BD%AF%E4%BD%93-%E7%AC%AC%E4%B8%83%E7%BB%84/Picture-framework/context_view.png)<br>
 *Figure3 Context View*
 
 As the picture showed, external entities can be divided in groups as follows:

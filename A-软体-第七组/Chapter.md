@@ -166,7 +166,8 @@ make test
 ### Other Entities
 - Version Control: GitHub
 - Testing tools: Almost all [testing applications](https://github.com/ZZAster/framework/tree/development/Tools) are runs on Visual Studio written in C#.
-- How to call it: For the reason of Accod.NET being developed completely by C#, it is mainly called by C# programming project. But Accord.NET also support other programming languages compitable with .NET such as VB.NET and C++/CTL
+- How to call it: For the reason of Accod.NET being developed completely by C#, it is mainly called by C# programming project. But Accord.NET also support other programming languages compitable with .NET such as VB.NET and C++/CTL.
+
 
 ---
 

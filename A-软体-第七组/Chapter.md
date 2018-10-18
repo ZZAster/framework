@@ -67,7 +67,12 @@ Anyone can join the developing team to improve the project. And they can exchang
 
 The team uses C# as the major language during developing Accord.NET. The reason is that C# is powerful and easy for anyone who get the hang of C++, C and Java. It simplifies C++ and also provides many powerful functions. Besides, C# is a language developed for.NET Framework. 
 
-*(缺少图片的完善，以及Power And Interest的分析)*
+# Power-Interest Grid
+We have created a power vs interest grid to show the stakeholder based on the interest and power. This project is mostly built by the of Accord.NET framework. Their manager is "cesarsouza". So the team has the most power and interest. 
+This project uses the visual studio and its expanding tool .Nuget. So they have the power but less interest.
+This project is open source and many contributors on github can see it and help to develop it. Also they can only use it to develop.
+And this project also have competitors who may have more interest on it but have less power.
+![powerVSinterest](https://raw.githubusercontent.com/ZZAster/framework/development/A-软体-第七组/Picture-framework/powerVSinterest.png)<br>
 
 ---
 # Context View

@@ -37,29 +37,33 @@ As a a project home on GitHub, Accord.NET has many stakeholders. The role of Acc
 
 * Scientific computing  
 * Signal and image processing  
-* Support libraries  
+* Support libraries   
+
+Accord.NET is a open source project. It isn't acquired by anyone, so it will receive the donations from the society. As the managers says in the offical site, the donations will be used to develop the project and employ onthers to improve it.  
 
 *Table1:The StakeHolders of Accord.NET*  
 
 | Stakeholder class | Description |
 |---|---|
-| Acquirers | Now it's a open source project, and the cost is based on the donations. The original author is César Roberto de Souza. |
 | Communicators | The team of the software has a mailbox, feedback@accord-framework.net to get the feedback from users. The developers of the team are also the communicators. Besides, users can talk with each others on the community. |
 | Developer | There are 11 active contributors on GitHub in the past 12 months. This project has a relatively large team, in the top 10% of all project teams on Open Hub. And so far, there are 72 contributors in the history of the software. |
 | Tester | All the bugs can be reported by posted on the community or mailed to the team. The menbers of the team or others will pick up the problem. |
 | Users | Accord.NET has many kinds of users. Take professionals for an example, there are many essays published in the world. It's a very famous project. And it can be used to build other software. |
 | Maintainers | The rule and standard will be confirmed by the team. The application is maintained by the developing team with decreasing Y-O-Y commits. Over the last twelve months, it has seen a substantial decrease in development activity.|
-| Competitors | There are some similar project, such as SHOUGUN, CVWS.NET, Emgu CV and so on.  |
-| Learners | This project is a open source project, it provides learners a lot of algorithms to learn about machine learning. |
+| Competitors | There are some similar project, such as SHOUGUN, CVWS.NET, Emgu CV and so on. |  
 
-*Table	3:	Most	active	contributors	in	trems	of	number	of	commits. *
+Anyone can join the developing team to improve the project. And they can exchange their ideas with others in the community. And in table 2 we can see the most active conrtibutor in the past 12 months and the one during all time.   
+
+*Table	2:	Most	active	contributors	in	trems	of	number	of	commits. *
 
 | Contributor | 12 Month Commits | All Time Commits | Language |
 |---|---|---|---|
 | cesarsouza | 331 | 2126 | C# |
 | AlexJCross | 9 | 73 | XML |
 | Anders Gusuafsson | 0 | 41 | XML |
-| Alex Risman | 0 | 24 | C# |
+| Alex Risman | 0 | 24 | C# |  
+
+The team uses C# as the major language during developing Accord.NET. The reason is that C# is powerful and easy for anyone who get the hang of C++, C and Java. It simplifies C++ and also provides many powerful functions. Besides, C# is a language developed for.NET Framework. 
 
 *(缺少图片的完善，以及Power And Interest的分析)*
 

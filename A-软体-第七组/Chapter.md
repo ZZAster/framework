@@ -54,6 +54,8 @@ Accord.NET is a open source project. It isn't acquired by anyone, so it will rec
 
 Anyone can join the developing team to improve the project. And they can exchange their ideas with others in the community. And in table 2 we can see the most active conrtibutor in the past 12 months and the one during all time.   
 
+![stakeholder](https://raw.githubusercontent.com/ZZAster/framework/development/A-软体-第七组/Picture-framework/stakeholder.png)<br>
+
 *Table	2:	Most	active	contributors	in	trems	of	number	of	commits. *
 
 | Contributor | 12 Month Commits | All Time Commits | Language |

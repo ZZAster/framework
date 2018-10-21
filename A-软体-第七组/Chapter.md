@@ -83,10 +83,10 @@ This desribe what the system does and does not do; where the boundaries are betw
 ## System Scope
 According to the introduction of Accord.NET's official website, Accord.NET Framework defined as a ".NET machine learning framework combined with audio and image processing libraries completely written in C#." 
 
-"Machine learning made in a minute.", The website of Accord.NET also describe the application direction and design concept this system.
+"Machine learning made in a minute.", Accord.NET describes the application direction and design concept of their system on the website, and briefly describes some functions and uses that the software system can provide on the initial interface of its official website.
 > It is a complete framework for building production-grade computer vision, computer audition,     signal processing and statistics applications even for commercial use. 
 
-And we can see that it has sufficient libaries which can solve related problems about machine learning:
+And as you can see from the official website's instructions and introductions, Accord.NET provides many powerful and useful libraries for developers on the .NET platform for machine learning and numerical computing. These libraries can be roughly divided into three modules. Below we show some of the library files in each module:
 
 
 >- Scientific Computing<br>
@@ -115,15 +115,22 @@ As the picture showed, external entities can be divided in groups as follows:
 
 ### Competitors
 
-As a machine learning framework specifically developed for .NET, Accord.NET has many competitors in the field. For example, Tensorflow is a powerful machine learning framework developed by Google and .NET Framwork application can install Tensorflowsharp through NuGet to complete the call to function of tensorflow framework. And there also are other competitors such as paddlepaddle of baidu, EmguCV and so on.
+As a machine learning framework developed specifically for the .NET platform, Accord.NET itself is used to make up for the development language on the .NET platform, especially for C#, which lacks the usable library files for numerical computing and machine learning.
 
-### Developing languages and Software Platform
+So we can see that although there are already many frameworks for machine learning, such as AForge.NET and Emgu.CV, there are no competitors on the same platform Accord.NET. As a new framework, it inherits many of the advantages of the products described above and has more complete and powerful features.
 
-- Languages: C#
-- Platform : Accord.NET can be installed on Linux and OS X with Mono, and in windows, it can runs through Visual Studio which is the main IDE of Accord.NET.
+But when we compare them across all the platform, we can see that there are many machine learning frameworks that are equally complete and simpler to use. These frameworks usually rely on languages that are more suitable for numerical calculations, such as Python. Tensorflow, developed by Google, is such a framework that most deep learning engineers are happy to develop using tensorflow and python. More importantly, Tensorflow has developed Tensorflowsharp, which is specifically applied to projects developed by C#.
 
-### Building and Dependencies
-We can see from above that Accord.NET can be building with VS and Mono on three mainly Operation Systems(Windows, Linux and OS X). There we only shows the dependencies of VS 2017, Linux and OS X:
+### Developing languages & Software Platform
+Accord.NET was developed as a C# package. Although it can be imported by other languages through the .NET platform, it is still a framework developed entirely by C#.
+
+- Developing Languages: C#
+- Platform : For the operating system, Accord.NET supports the three most popular operating systems, Windows, Linux and OS X. In the integrated development environment, it is mainly called by projects built using Visual Studio.
+
+### Building & Dependencies
+We can see from above that Accord.NET can be building with VS and Mono on three mainly Operation Systems(Windows, Linux and OS X). There we only shows the dependencies for building it on VS 2017, and on UNIX-like operating systems, such as Linux and OS X, Accord.NET needs to be installed by using Mono, a free and open source project that creates a series of .NET tools including C# compilers and common language architectures which can run on a system other than windows, Mono will automatically import the external dependencies required by the framework during the installation process:
+
+**Building**
 
 - With Visual Studio 2017
 >Please download and install the following dependencies:<br>
@@ -132,7 +139,7 @@ We can see from above that Accord.NET can be building with VS and Mono on three 
 [NUnit 3 Test Adapter](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.NUnit3TestAdapter)<br>
 [Visual C++ Redistributable for Visual Studio 2015](https://www.microsoft.com/en-us/download/details.aspx?id=48145&751be11f-ede8-5a0c-058c-2ee190a24fa6) (both x64 and x86)
 
-- With Mono in Linux
+- With Mono in Linux and OS X
 ```bash
 # Install Mono
 sudo apt-get install mono-complete monodevelop monodevelop-nunit git autoconf make
@@ -150,34 +157,17 @@ make samples
 make test
 ```
 
-- With Mono in OS X
+**Dependencies**
 
-```bash
-# Install Mono
-brew update
-brew cask install mono-mdk pkg-config automake
+In addition to the dependencies required for installation, most of the dependencies are external standard libraries such as GhostAPI, JSON, and NUint, as well as libraries for handling audio and image formats, such as ffmpeg and ZedGraph.
 
-# Clone the repository
-git clone https://github.com/accord-net/framework.git
+### Version Control & Community & Testing tools
+In the process of Accord.NET development, there are many platforms that play a very important role. As an open source software, Github is used as a platform for version control and community communication. The core development team develops functions through this platform, and individual users can maintain the software by submitting revision comments.
 
-# Enter the directory
-cd framework
+Communities can also contribute to this project by other means, such as email and supplementing Wikipedia. Developers also offer electronic payments and OpenHub to get help from some individual users.
 
-# Set some environment variables with OSX-specific paths
-export PKG_CONFIG_PATH=/Library/Frameworks/Mono.framework/Versions/Current/lib/pkgconfig/
-export MONO=/Library/Frameworks/Mono.framework/Versions/Current/bin/mono
-export XBUILD=/Library/Frameworks/Mono.framework/Versions/Current/bin/xbuild
-
-# Build the framework solution using Mono
-./autogen.sh
-make build
-make samples
-make test
-```
-### Other Entities
-- Version Control: GitHub
-- Testing tools: Almost all [testing applications](https://github.com/ZZAster/framework/tree/development/Tools) are runs on Visual Studio written in C#.
-- How to call it: For the reason of Accod.NET being developed completely by C#, it is mainly called by C# programming project. But Accord.NET also support other programming languages compitable with .NET such as VB.NET and C++/CTL.
+### Others
+Follow the advice given by the teacher during the interim report，We studied which languages the Accord.NET framework can be called by, and then found out that for the reason of Accod.NET being developed completely by C#, it is mainly called by C# programming project, but it also support other programming languages compitable with .NET such as VB.NET and C++/CTL.
 
 
 ---

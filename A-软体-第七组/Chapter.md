@@ -171,6 +171,16 @@ Follow the advice given by the teacher during the interim report，We studied wh
 
 
 ---
+# Evolution	perspective  
+
+Compared with the first release, Accord.NET has improved much more. And there are totally 15 releases in the Github. It starts from 07-09-2013 to 22-10-2017. As for the version is from 2.10 to 3.8.0. The earlier releases can only be found in the releases notes. The real initial release is on 20-05-2010.  
+The first release is Accord.NET Framework 2.0.0. It's based on the AForge.NET. What it does is provide a series of fundamental libraries, determining the ooriginal form of the project. Between 2.0.0 and 3.0.0, there are several releases used to update the libraries by adding new features and fix bugs. But the developing team concentrates more attention on adding new features.  
+Take 2.14 for an example, the release only fixes a bug, and add many new features like Taylor series functions and dissimilarity functions. But sometime it will also report some issue and fix them in the next release.  
+On 16-8-2015 the Accord.NET 3.0.0 is released. The most important update is that Accord.NET merge with AForge.NET.This release marks a milestone in the Accord.NET Framework. Starting from this release, the AForge.NET Framework has been incorporated directly in the project. In addition, it provides most of the AForge.NET namespaces unchanged and help projects use the AForge.NET framework to make the transition to Accord.NET more easily. This means that this specific version of Accord.NET Framework can be used as drop-in replacement in any project currently using the AForge.NET Framework and that is willing to upgrade to Accord.NET sometime in the future. It's really a good news for the users of AForge.NET.  
+According to the recent releases, we can see that the team focus on MachineLearning. These releases updates many algorithms like K-Medoids (PAM) and Voronoi Iteration clustering algorithms. In addition, they add support for OS X targetting NET Standard 1.4, fix target framework versions and add some new namespace.   
+Furthermore, the project is near completion form the latest release. It adds many example for the classes. And The libsonly script is now in RAR4 format instead of RAR5 so they will not be listed as corrupted files by Linux/MacOSX decompressors
+
+---
 # Functional View
 
 This part will show the functional view of the Accord.NET. 

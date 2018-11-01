@@ -181,11 +181,6 @@ According to the recent releases, we can see that the team focus on MachineLearn
 Furthermore, the project is near completion form the latest release. It adds many example for the classes. And The libsonly script is now in RAR4 format instead of RAR5 so they will not be listed as corrupted files by Linux/MacOSX decompressors
 
 ---
-# Functional View
-
-This part will show the functional view of the Accord.NET. 
-
-The Functional view of a system defines the architectural elements that deliver the system’s functionality. The view documents the system’s functional structure-including the key functional elements, their responsibilities, the interfaces they expose, and the interactions between them. Taken together, this demonstrates how the system will perform the functions required of it.
 
 # Functional View
 
@@ -252,7 +247,7 @@ In order to realize the functions, Accord.NET has so many algorithms.The main fu
 |  Kernel Methods  | Kernel Support Vector Machines , Multi-class and Multi-label machines , Sequential Minimal Optimization , Least-Squares Learning , probabilistic learning , including special methods for linear machines such as LIBLINEAR's methods for Linear Coordinate Descent , Linear Newton Method , Probabilistic Coordinate Descent , Probabilistic Coordinate Descent in the Dual , Probabilistic Newton Method for L1 and L2 machines in both the dual and primal formulations. |
 |     Imaging      | Interest and feature point detectors such as Harris, FREAK , SURF , and FAST . Grey-level Co-occurrence matrices , Border following , Bag-of-Visual-Words (BoW) , RANSAC-based homography estimation , integral images , haralick textural feature extraction , and dense descriptors such as histogram of oriented gradients (HOG) and Local Binary Pattern (LBP) . Several image filters for image processing applications such as difference of Gaussians , Gabor , Niblack and Sauvola thresholding . |
 | Audio and Signal   | Load, parse, save, filter and transform audio signals, such as applying audio processing filters in both space and frequency domain . WAV files , audio capture , time-domain filters such as envelope , high-pass , low-pass , wave rectification filters. Frequency-domain operators such as differential rectification filter and comb filter with Dirac's delta functions . Signal generators for Cosine , Impulse , Square signals.  |
-||      Vision      | Real-time face detection and tracking , as well as general methods for detecting, tracking and transforming objects in image streams. Contains cascade definitions, Camshift and Dynamic Template Matching trackers. Includes pre-created  classifiers for human  faces and some facial features such as noses. |
+|      Vision      | Real-time face detection and tracking , as well as general methods for detecting, tracking and transforming objects in image streams. Contains cascade definitions, Camshift and Dynamic Template Matching trackers. Includes pre-created  classifiers for human  faces and some facial features such as noses. |
 
 ---
 # References

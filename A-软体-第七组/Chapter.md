@@ -198,7 +198,7 @@ The Accord.NET Framework is a programming aid software. The Accord.NET Framework
 The framework comprises a set of libraries that are available in source code as well as via executable installers and [NuGet](https://en.wikipedia.org/wiki/NuGet) packages.
 
 ## External Interfaces Layer
-Accord .NET uses a lot of auxiliary software to help implementing its functions, for example, when we wants to access database, we can use the AccessDatabaseEngine of Microsoft, and when we need to do some operations on video, we can use FFmpeg and so on. 
+Accord .NET uses a lot of auxiliary softwares to help implementing its functions, for example, when we want to access database, we can use the AccessDatabaseEngine of Microsoft, and when we need to do some operations on video, we can use FFmpeg and so on. The followings are external components which can be found in the fold "External" of the Accord.NET Framework.
 > * **ace** - AccessDatabaseEngine, is Microsoft's access database access engine, and some software that calls access to the database requires this engine to run.
 > * **ffmpeg** - FFmpeg is a free multimedia framework that can run video, conversion, and streaming functions in multiple formats of audio and video, giving users access to almost all video formats, including mkv, flv, and mov. VLC Media Player and Google Chrome browsers are already supported.has very powerful features including video capture, video format conversion, video capture, watermarking, etc.
 > * **GhostAPI** - Ghost is built on top of a RESTful JSON API. This API is used for all data access inside of the Ghost software itself, meaning the API is the heart of the software, not an afterthought or additional layer. It is the API provided by Lego for communication with RCX brick.

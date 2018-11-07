@@ -249,6 +249,26 @@ In order to realize the functions, Accord.NET has so many algorithms.The main fu
 | Audio and Signal   | Load, parse, save, filter and transform audio signals, such as applying audio processing filters in both space and frequency domain . WAV files , audio capture , time-domain filters such as envelope , high-pass , low-pass , wave rectification filters. Frequency-domain operators such as differential rectification filter and comb filter with Dirac's delta functions . Signal generators for Cosine , Impulse , Square signals.  |
 |      Vision      | Real-time face detection and tracking , as well as general methods for detecting, tracking and transforming objects in image streams. Contains cascade definitions, Camshift and Dynamic Template Matching trackers. Includes pre-created  classifiers for human  faces and some facial features such as noses. |
 
+## Deployment View
+
+The deployment view contains the dependency tools it used for the program.
+#Third-party dependencies:The program has several third-party dependencies.
+|Third-party dependencies|                     function                                    |
+|---|---|
+|C#|Language used for the programs that can be written.|
+|Visual Studio|This programs is built and compiled on visual studio, so it uses the api provided by vs.|
+|ACE(AccessDatabaseEngine)|It is Microsoft provided which is used to access the database.|
+|ffmpeg|A complete, cross-platform solution to record, convert and stream audio and video.|
+|GhostAPI|Ghost is a professional publishing platform. This API is used for all data access inside of the Ghost software itself.|
+|Json.NET|Json.NET is a popular high-performance JSON framework for .NET.|
+|libfreenect|libfreenect is a library for accessing the Microsoft Kinect USB camera.|
+|msinttypes|Msinttypes contains two header files. In some Api such as ffmpeg, the using header file is different from what visual studio provides. So it should used these two files.|
+|NUnit|NUnit is a unit-testing framework for all .Net languages.|
+|SharpDX|SharpDX is an open-source managed .NET wrapper of the DirectX API.|
+|SharpZipLib|Ziplib is a Zip, GZip, Tar and BZip2 library written for the .NET platform.|
+|TeRK|The TeRK.dll is a .NET assembly, which contains built of TeRK C# types generated from TeRK ICE definition.|
+|ZedGraph|ZedGraph is a class library for creating two-dimensional linear, bar and pie charts of arbitrary data.|
+
 ---
 # References
 1. Wikipedia - Accord.NET.<br>

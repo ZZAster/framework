@@ -253,7 +253,8 @@ In order to realize the functions, Accord.NET has so many algorithms.The main fu
 
 The deployment view contains the dependency tools it used for the program.
 #Third-party dependencies:The program has several third-party dependencies.
-|Third-party dependencies|                     function                                    |
+
+|Third-party dependencies| function   |
 |---|---|
 |C#|Language used for the programs that can be written.|
 |Visual Studio|This programs is built and compiled on visual studio, so it uses the api provided by vs.|

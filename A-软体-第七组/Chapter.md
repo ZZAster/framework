@@ -224,7 +224,7 @@ In order to realize the functions, Accord.NET has so many algorithms.The main fu
 
 The deployment view describes the environment into which the system will be deployed. 
 ## Environment: 
-Accord.NET can be used on Windows, Linux and OS X. It is developed by C#, but that not means it can be only used in a C# project. Accord.NET supports all .NET compatible languages such as VB.NET or C++/CLI. it needs a .NET development environment such as Microsoft Visual Studio. And you can use it after downloading and installing the package. Different functions have different package. You can choose what you need. After that, you can use the package in your project.
+Accord.NET can be used on Windows, Linux and OS X. It is developed by C#, but that not means it can be only used in a C# project. Accord.NET supports all .NET compatible languages such as VB.NET or C++/CLI. It needs a .NET development environment such as Microsoft Visual Studio. And you can use it after downloading and installing the package. Different functions have different package. You can choose what you need. After that, you can use the package in your project.
 
 ## Third-party dependencies:
 

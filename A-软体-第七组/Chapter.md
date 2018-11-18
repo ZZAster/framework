@@ -174,22 +174,42 @@ Follow the advice given by the teacher during the interim report，We studied wh
 
 This part will show the functional view of the Accord.NET. 
 
-The Functional view of a system defines the architectural elements that deliver the system’s functionality. The view documents the system’s functional structure-including the key functional elements, their responsibilities, the interfaces they expose, and the interactions between them. Taken together, this demonstrates how the system will perform the functions required of it.
+The Functional view of a system defines the architectural elements that deliver the system’s functionality. The view documents the system’s functional structure-including the key functional elements, their responsibilities, the interfaces they expose, and the interactions between them. Taken together, this demonstrates how the system will perform the functions required of it. The Following is an introduction to the functional capabilities, external interfaces, dependency layer and logical layer of the framework, among which functional capabilities show the functions of Accord.NET, external interfaces layer shows the auxiliary external software, and the dependency layer shows the library it used to implement its functions, and the logical layer shows the algorithms.
 
 ##  Functional Capabilities
 
-The Accord.NET Framework is a programming aid software. The Accord.NET Framework is a C# framework that extends the new  [AForge.NET Framework](https://en.wikipedia.org/wiki/AForge.NET) with new tools and libraries.  Accord.NET implements tools and features that are still not available in AForge.NET, such as Kernel Support Vector Machines, Discriminative and Projective Analysis, Hidden Markov Models, new Neural networks learning algorithms, new imaging filters, and other useful methods and tools. 
+The Accord.NET Framework is a programming aid software. And it is a C# framework that extends the  AForge.NET Framework with new tools and libraries.  Accord.NET implements tools and features that are still not available in AForge.NET, such as Kernel Support Vector Machines, Discriminative and Projective Analysis, Hidden Markov Models, new Neural networks learning algorithms, new imaging filters, and other useful methods and tools. 
 
 > *  [AForge.NET](https://en.wikipedia.org/wiki/AForge.NET) is a computer vision and artificial intelligence library. It implements a number of genetic, fuzzy logic and machine learning algorithms with several architectures of artificial neural networks with corresponding training algorithms. 
 > * [Accord.NET](https://en.wikipedia.org/wiki/Accord.NET) is a collection of libraries for scientific computing, including numerical linear algebra, numerical optimization, statistics, artificial neural networks, machine learning, signal processing and computer vision and support libraries (such as graph plotting and visualization).
 
 The framework comprises a set of libraries that are available in source code as well as via executable installers and [NuGet](https://en.wikipedia.org/wiki/NuGet) packages.
 
-## Main Architecture 
+## External Interfaces Layer
 
-The framework is comprised by the set of libraries and sample applications, which demonstrate their features: 
+Accord.NET uses a lot of auxiliary software to help implementing its functions, for example, when we want to access database, we can use the AccessDatabaseEngine of Microsoft, and when we need to do some operations on video, we can use FFmpeg and so on.  The following is the external software we may need when using the Accord.NET framework.
+
+> * **ace** - AccessDatabaseEngine, is Microsoft's access database access engine, and some software that calls access to the database requires this engine to run.
+> * **ffmpeg** -  A complete, cross-platform solution to record, convert and stream audio and video. Convertng video and audio is very easy with FFmpeg.
+> * **GhostAPI** - Ghost is built on top of a RESTful JSON API. This API is used for all data access inside of the Ghost software itself, meaning the API is the heart of the software, not an afterthought or additional layer. It is the API provided by Lego for communication with RCX brick.
+> * **Json.NET** - Json.NET is a popular high-performance JSON framework for .NET. 
+> * **libfreenect** - Driver for Kinect for Windows v2 (K4W2) devices (release and developer preview). And libfreenect2 does not do anything for either Kinect for Windows v1 or Kinect for Xbox 360 sensors. Use libfreenect1 for those sensors.
+> * **msinttypes** -  This allows compiling projects which meet the criteria of C99 in MSVC. (The C99 standard defines "stdint.h", "inttypes.h" for uniform cross-platform data definitions. Unfortunately, VC, BCB and other compilers have poor compatibility with C99.)
+> * **Nunit** - NUnit is a unit testing framework specifically written for .NET.  NUnit is the fourth major product of the xUnit family, written entirely in C#. And it is written to take advantage of many features of .NET, such as reflection, customer attributes, etc. The most important point is that it works for all .NET languages.
+> * **OpenKinect** - It is an open community of people interested in making use of the amazing Xbox Kinect hardware with our PCs and other devices. We are working on free, open source libraries that will enable the Kinect to be used with Windows, Linux, and Mac. Our primary focus is currently the **libfreenect** software.
+> * **SharpDX** - SharpDX is an open-source managed .NET wrapper of the [DirectX API](https://msdn.microsoft.com/en-us/library/windows/desktop/ee663274%28v=vs.85%29.aspx).
+> * **SharpZipLib** - SharpZipLib (#ziplib, formerly NZipLib) is a compression library for Zip, GZip, BZip2, and Tar, written entirely in C# for .NET. It is implemented as an assembly (installable in the GAC), and thus can easily be incorporated into other projects (in any .NET language)
+> * **TeRK** - The TeRK.dll is a .NET assembly. The TeRK.dll requires Ice.dll and Glacier2.dll, which are part of ICE package.
+> * **ZedGraph** - ZedGraph is an open-source .NET charting library, of which all code is developed in C#. It can create 2D linear and cylindrical graphs with arbitrary data sets.
+
+## Dependency Layer 
+
+The framework is comprised by the set of libraries and sample applications, which demonstrate their features, and the Accord.NET framework implement it's function dependent on these libraries.
+
 ![Structure](https://raw.githubusercontent.com/ZZAster/framework/development/A-%E8%BD%AF%E4%BD%93-%E7%AC%AC%E4%B8%83%E7%BB%84/Picture-framework/Structure.png)
-*Figure structure*
+
+*Graph: the internal structure of Accord.NET.*
+
 > * **Accord.Math** - Contains a matrix extension library, along with a suite of numerical matrix decomposition methods, numerical optimization algorithms for constrained and unconstrained problems, special functions and other tools for scientific applications.
 > * **Accord.Statistics** - Contains probability distributions, hypothesis testing, statistical models and methods such as Linear and Logistic regression, Hidden Markov Models, (Hidden) Conditional Random Fields, Principal Component Analysis, Partial Least Squares, Discriminant Analysis, Kernel methods and many other related techniques.
 > * **Accord.MachineLearning** - Support Vector Machines, Decision Trees, Naive Bayesian models, K-means, Gaussian Mixture models and general algorithms such as Ransac, Cross-validation and Grid-Search for machine-learning applications.
@@ -205,21 +225,132 @@ The framework is comprised by the set of libraries and sample applications, whic
 > - **Accord.Controls.Audio** - Windows Forms controls to display waveforms and audio-related information.
 > - **Accord.Controls.Vision** - Windows Forms components and controls to track head, face and hand movements and other computer vision related tasks.
 
-## Internal Structure
+## Logical Layer
 
-In order to realize the functions, Accord.NET has so many algorithms.The main functional algorithms included in the Accord.NET framework are described below by its category.
+In order to realize the functions, Accord.NET has so many algorithms.The main functional algorithms included in the Accord.NET framework are described below by its category. 
 
-> * **Classification** - [Support Vector Machines ](http://accord-framework.net/docs/html/N_Accord_MachineLearning_VectorMachines.htm), [Logistic Regression ](http://accord-framework.net/docs/html/T_Accord_Statistics_Models_Regression_LogisticRegression.htm), [Decision Trees ](http://accord-framework.net/docs/html/T_Accord_MachineLearning_DecisionTrees_DecisionTree.htm), [Neural Networks ](http://accord-framework.net/docs/html/N_Accord_Neuro.htm), [Deep Learning (Deep Neural Networks) ](http://accord-framework.net/docs/html/T_Accord_Neuro_Networks_DeepBeliefNetwork.htm), [Levenberg-Marquardt with Bayesian Regularization ](http://accord-framework.net/docs/html/T_Accord_Neuro_Learning_LevenbergMarquardtLearning.htm), [Restricted Boltzmann Machines ](http://accord-framework.net/docs/html/T_Accord_Neuro_Networks_RestrictedBoltzmannMachine.htm), [Sequence classification ](http://accord-framework.net/docs/html/T_Accord_Statistics_Models_Markov_Learning_HiddenMarkovClassifierLearning.htm), [Hidden Markov Classifiers ](http://accord-framework.net/docs/html/T_Accord_Statistics_Models_Markov_HiddenMarkovClassifier.htm)and [Hidden Conditional Random Fields ](http://accord-framework.net/docs/html/T_Accord_Statistics_Models_Fields_HiddenConditionalRandomField_1.htm). 
-> * **Regression** - [Multiple linear regression ](http://accord-framework.net/docs/html/T_Accord_Statistics_Models_Regression_Linear_MultipleLinearRegression.htm), [Multivariate linear regression ](http://accord-framework.net/docs/html/T_Accord_Statistics_Models_Regression_Linear_MultivariateLinearRegression.htm), [polynomial regression ](http://accord-framework.net/docs/html/T_Accord_Statistics_Models_Regression_Linear_PolynomialRegression.htm), logarithmic regression. [Logistic regression ](http://accord-framework.net/docs/html/T_Accord_Statistics_Models_Regression_LogisticRegression.htm), [multinomial logistic regression (softmax) ](http://accord-framework.net/docs/html/T_Accord_Statistics_Models_Regression_MultinomialLogisticRegression.htm)and [generalized linear models ](http://accord-framework.net/docs/html/T_Accord_Statistics_Models_Regression_GeneralizedLinearRegression.htm). [L2-regularized L2-loss logistic regression ](http://accord-framework.net/docs/html/T_Accord_MachineLearning_VectorMachines_Learning_ProbabilisticNewtonMethod.htm), [L2-regularized logistic regression ](http://accord-framework.net/docs/html/T_Accord_MachineLearning_VectorMachines_Learning_ProbabilisticDualCoordinateDescent.htm), [L1-regularized logistic regression ](http://accord-framework.net/docs/html/T_Accord_MachineLearning_VectorMachines_Learning_ProbabilisticCoordinateDescent.htm), [L2-regularized logistic regression in the dual form ](http://accord-framework.net/docs/html/T_Accord_MachineLearning_VectorMachines_Learning_ProbabilisticDualCoordinateDescent.htm)and [regression support vector machines ](http://accord-framework.net/docs/html/T_Accord_MachineLearning_VectorMachines_Learning_SequentialMinimalOptimizationRegression.htm). 
-> * **Clustering**- [K-Means ](http://accord-framework.net/docs/html/T_Accord_MachineLearning_KMeans.htm), [K-Modes ](http://accord-framework.net/docs/html/T_Accord_MachineLearning_KModes.htm), [Mean-Shift ](http://accord-framework.net/docs/html/T_Accord_MachineLearning_MeanShift.htm), [Gaussian Mixture Models ](http://accord-framework.net/docs/html/T_Accord_MachineLearning_GaussianMixtureModel.htm), [Binary Split ](http://accord-framework.net/docs/html/T_Accord_MachineLearning_BinarySplit.htm), [Deep Belief Networks ](http://accord-framework.net/docs/html/T_Accord_Neuro_Networks_DeepBeliefNetwork.htm), [Restricted Boltzmann Machines ](http://accord-framework.net/docs/html/T_Accord_Neuro_Networks_RestrictedBoltzmannMachine.htm). Clustering algorithms can be applied in arbitrary data, [including images ](https://github.com/accord-net/framework/wiki/Sample-applications#color-clustering-kmeans-and-meanshift), data tables, videos and [audio ](https://github.com/accord-net/framework/wiki/Audio). 
-> * **Distribution**- Parametric and [non-parametric estimation ](http://accord-framework.net/docs/html/T_Accord_Statistics_Distributions_Univariate_EmpiricalDistribution.htm)of more than 40 distributions. [Univariate ](http://accord-framework.net/docs/html/N_Accord_Statistics_Distributions_Univariate.htm)distributions such as [Normal ](http://accord-framework.net/docs/html/T_Accord_Statistics_Distributions_Univariate_NormalDistribution.htm), [Cauchy ](http://accord-framework.net/docs/html/T_Accord_Statistics_Distributions_Univariate_CauchyDistribution.htm), [Hypergeometric ](http://accord-framework.net/docs/html/T_Accord_Statistics_Distributions_Univariate_HypergeometricDistribution.htm), [Poisson ](http://accord-framework.net/docs/html/T_Accord_Statistics_Distributions_Univariate_PoissonDistribution.htm), [Bernoulli ](http://accord-framework.net/docs/html/T_Accord_Statistics_Distributions_Univariate_BernoulliDistribution.htm), and specialized distributions such as the [Kolmogorov-Smirnov ](http://accord-framework.net/docs/html/T_Accord_Statistics_Distributions_Univariate_KolmogorovSmirnovDistribution.htm), [Nakagami ](http://accord-framework.net/docs/html/T_Accord_Statistics_Distributions_Univariate_NakagamiDistribution.htm), [Weibull ](http://accord-framework.net/docs/html/T_Accord_Statistics_Distributions_Univariate_WeibullDistribution.htm), and [Von-Mises ](http://accord-framework.net/docs/html/T_Accord_Statistics_Distributions_Univariate_VonMisesDistribution.htm)distributions. [Multivariate ](http://accord-framework.net/docs/html/N_Accord_Statistics_Distributions_Multivariate.htm)distributions such as the [multivariate Normal ](http://accord-framework.net/docs/html/T_Accord_Statistics_Distributions_Multivariate_MultivariateNormalDistribution.htm), [Multinomial ](http://accord-framework.net/docs/html/T_Accord_Statistics_Distributions_Multivariate_MultinomialDistribution.htm), [Independent ](http://accord-framework.net/docs/html/T_Accord_Statistics_Distributions_Multivariate_Independent_1.htm), [Joint ](http://accord-framework.net/docs/html/T_Accord_Statistics_Distributions_Multivariate_JointDistribution.htm)and [Mixture distributions ](http://accord-framework.net/docs/html/T_Accord_Statistics_Distributions_Multivariate_MultivariateMixture_1.htm). 
-> * **Hypothesis Tests** - More than [35 statistical hypothesis tests ](http://accord-framework.net/docs/html/N_Accord_Statistics_Testing.htm), including [one way ](http://accord-framework.net/docs/html/T_Accord_Statistics_Testing_OneWayAnova.htm)and [two-way ANOVA tests ](http://accord-framework.net/docs/html/T_Accord_Statistics_Testing_TwoWayAnova.htm), non-parametric tests such as the [Kolmogorov-Smirnov test ](http://accord-framework.net/docs/html/T_Accord_Statistics_Testing_KolmogorovSmirnovTest.htm)and the [Sign Test for the Median ](http://accord-framework.net/docs/html/T_Accord_Statistics_Testing_SignTest.htm), [contingency table ](http://accord-framework.net/docs/html/T_Accord_Statistics_Analysis_GeneralConfusionMatrix.htm)tests such as the [Kappa test ](http://accord-framework.net/docs/html/T_Accord_Statistics_Testing_KappaTest.htm), with variations for [multiple tables ](http://accord-framework.net/docs/html/T_Accord_Statistics_Testing_AverageKappaTest.htm), as well as the [Bhapkar ](http://accord-framework.net/docs/html/T_Accord_Statistics_Testing_BhapkarTest.htm)and [Bowker ](http://accord-framework.net/docs/html/T_Accord_Statistics_Testing_BowkerTest.htm)tests; and the more traditional [Chi-Square ](http://accord-framework.net/docs/html/T_Accord_Statistics_Testing_ChiSquareTest.htm), [Z ](http://accord-framework.net/docs/html/T_Accord_Statistics_Testing_ZTest.htm), [F ](http://accord-framework.net/docs/html/T_Accord_Statistics_Testing_FTest.htm), [T ](http://accord-framework.net/docs/html/T_Accord_Statistics_Testing_TTest.htm)and [Wald tests ](http://accord-framework.net/docs/html/T_Accord_Statistics_Testing_WaldTest.htm). 
-> * **Kernel Methods** - [Kernel Support Vector Machines ](http://accord-framework.net/docs/html/N_Accord_MachineLearning_VectorMachines.htm), [Multi-class ](http://accord-framework.net/docs/html/T_Accord_MachineLearning_VectorMachines_MulticlassSupportVectorMachine.htm)and [Multi-label machines ](http://accord-framework.net/docs/html/T_Accord_MachineLearning_VectorMachines_MultilabelSupportVectorMachine.htm), [Sequential Minimal Optimization ](http://accord-framework.net/docs/html/T_Accord_MachineLearning_VectorMachines_Learning_SequentialMinimalOptimization.htm), [Least-Squares Learning ](http://accord-framework.net/docs/html/T_Accord_MachineLearning_VectorMachines_Learning_LeastSquaresLearning.htm), [probabilistic learning ](http://accord-framework.net/docs/html/T_Accord_MachineLearning_VectorMachines_Learning_ProbabilisticOutputCalibration.htm), including special methods for [linear machines ](http://accord-framework.net/docs/html/T_Accord_MachineLearning_VectorMachines_SupportVectorMachine.htm)such as LIBLINEAR's methods for [Linear Coordinate Descent ](http://accord-framework.net/docs/html/T_Accord_MachineLearning_VectorMachines_Learning_LinearCoordinateDescent.htm), [Linear Newton Method ](http://accord-framework.net/docs/html/T_Accord_MachineLearning_VectorMachines_Learning_LinearNewtonMethod.htm), [Probabilistic Coordinate Descent ](http://accord-framework.net/docs/html/T_Accord_MachineLearning_VectorMachines_Learning_ProbabilisticCoordinateDescent.htm), [Probabilistic Coordinate Descent in the Dual ](http://accord-framework.net/docs/html/T_Accord_MachineLearning_VectorMachines_Learning_ProbabilisticDualCoordinateDescent.htm), [Probabilistic Newton Method for L1 and L2 machines in both the dual and primal formulations](http://accord-framework.net/docs/html/T_Accord_MachineLearning_VectorMachines_Learning_ProbabilisticNewtonMethod.htm). 
-> * **Imaging** - Interest and feature point detectors such as [Harris](http://accord-framework.net/docs/html/T_Accord_Imaging_HarrisCornersDetector.htm), [FREAK ](http://accord-framework.net/docs/html/T_Accord_Imaging_FastRetinaKeypoint.htm), [SURF ](http://accord-framework.net/docs/html/T_Accord_Imaging_SpeededUpRobustFeaturesDetector.htm), and [FAST ](http://accord-framework.net/docs/html/T_Accord_Imaging_FastCornersDetector.htm). [Grey-level Co-occurrence matrices ](http://accord-framework.net/docs/html/T_Accord_Imaging_GrayLevelCooccurrenceMatrix.htm), [Border following ](http://accord-framework.net/docs/html/T_Accord_Imaging_BorderFollowing.htm), [Bag-of-Visual-Words (BoW) ](http://accord-framework.net/docs/html/T_Accord_Imaging_BagOfVisualWords.htm), [RANSAC-based homography estimation ](http://accord-framework.net/docs/html/T_Accord_Imaging_RansacHomographyEstimator.htm), [integral images ](http://accord-framework.net/docs/html/T_Accord_Imaging_IntegralImage2.htm), [haralick textural feature extraction ](http://accord-framework.net/docs/html/T_Accord_Imaging_Haralick.htm), and dense descriptors such as [histogram of oriented gradients (HOG) ](http://accord-framework.net/docs/html/T_Accord_Imaging_HistogramsOfOrientedGradients.htm)and [Local Binary Pattern (LBP) ](http://accord-framework.net/docs/html/T_Accord_Imaging_LocalBinaryPattern.htm). Several [image filters for image processing applications ](http://accord-framework.net/docs/html/N_Accord_Imaging_Filters.htm)such as [difference of Gaussians ](http://accord-framework.net/docs/html/T_Accord_Imaging_Filters_DifferenceOfGaussians.htm), [Gabor ](http://accord-framework.net/docs/html/T_Accord_Imaging_Filters_GaborFilter.htm), [Niblack ](http://accord-framework.net/docs/html/T_Accord_Imaging_Filters_NiblackThreshold.htm)and [Sauvola thresholding ](http://accord-framework.net/docs/html/T_Accord_Imaging_Filters_SauvolaThreshold.htm). 
-> * **Audio and Signal** - Load, parse, save, filter and transform [audio signals](http://accord-framework.net/docs/html/T_Accord_Audio_Signal.htm), such as applying [audio processing filters ](http://accord-framework.net/docs/html/N_Accord_Audio_Filters.htm)in both space and [frequency domain ](http://accord-framework.net/docs/html/T_Accord_Audio_ComplexSignal.htm). [WAV files ](http://accord-framework.net/docs/html/T_Accord_Audio_Formats_WaveDecoder.htm), [audio capture ](http://accord-framework.net/docs/html/T_Accord_DirectSound_AudioCaptureDevice.htm), time-domain filters such as [envelope ](http://accord-framework.net/docs/html/T_Accord_Audio_Filters_EnvelopeFilter.htm), [high-pass ](http://accord-framework.net/docs/html/T_Accord_Audio_Filters_HighPassFilter.htm), [low-pass ](http://accord-framework.net/docs/html/T_Accord_Audio_Filters_LowPassFilter.htm), [wave rectification ](http://accord-framework.net/docs/html/T_Accord_Audio_Filters_WaveRectifier.htm)filters. Frequency-domain operators such as [differential rectification filter ](http://accord-framework.net/docs/html/T_Accord_Audio_ComplexFilters_DifferentialRectificationFilter.htm)and [comb filter with Dirac's delta functions ](http://accord-framework.net/docs/html/T_Accord_Audio_ComplexFilters_CombFilter.htm). Signal generators for [Cosine ](http://accord-framework.net/docs/html/T_Accord_Audio_Generators_CosineGenerator.htm), [Impulse ](http://accord-framework.net/docs/html/T_Accord_Audio_Generators_ImpulseGenerator.htm), [Square ](http://accord-framework.net/docs/html/T_Accord_Audio_Generators_SquareGenerator.htm)signals. 
-> * **Vision** - [Real-time face detection ](http://accord-framework.net/docs/html/T_Accord_Vision_Detection_HaarObjectDetector.htm)and [tracking ](http://accord-framework.net/docs/html/T_Accord_Vision_Tracking_Camshift.htm), as well as general methods for [detecting ](http://accord-framework.net/docs/html/T_Accord_Vision_GroupMatching.htm), [tracking ](http://accord-framework.net/docs/html/N_Accord_Vision_Tracking.htm)and [transforming objects in image streams ](http://accord-framework.net/docs/html/N_Accord_Imaging.htm). Contains [cascade definitions ](http://accord-framework.net/docs/html/N_Accord_Vision_Detection_Cascades.htm), [Camshift ](http://accord-framework.net/docs/html/T_Accord_Vision_Tracking_Camshift.htm)and [Dynamic Template Matching trackers ](http://accord-framework.net/docs/html/T_Accord_Vision_Tracking_MatchingTracker.htm). Includes [pre-created classifiers for human faces ](http://accord-framework.net/docs/html/T_Accord_Vision_Detection_Cascades_FaceHaarCascade.htm)and some facial features such as [noses ](http://accord-framework.net/docs/html/T_Accord_Vision_Detection_Cascades_NoseHaarCascade.htm). 
+|     Category     | algorithms                                                   |
+| :--------------: | ------------------------------------------------------------ |
+|  Classification  | SVM, Logistic Regression, Decision Trees,  Neural Networks, Deep Learning, Deep Neural Networks, Levenberg-Marquardt with Bayesian Regularization, Restricted Boltzmann Machines, Sequence classification, Hidden Markov Classifiers and Hidden Conditional Random Fields. |
+|    Regression    | Multiple linear regression, Multivariate linear regression, polynomial regression, logarithmic regression, logistic regression, multinomial logistic regression(softmax) and generalized linear models, L2-regularized L2-loss logistic regression, L2-regularized logistic regression, L1-regularized logistic regression, L2-regularized logistic regression in the dual form and regression support vector machines. |
+|    Clustering    | K-Means, K-Modes, Mean-Shift, Gaussian Mixture Models, Binary Split, Deep Belief Networks, Restricted Boltzmann Machines. Clustering algorithms can be applied in arbitrary data, including images, data tables, videos and audio. |
+|   Distribution   | Parametric and non-parametric estimation of more than 40 distributions. Univariate distributions such as Normal, Cauchy,  Hypergeometric , Poisson , Bernoulli , and specialized  distributions such as the Kolmogorov-Smirnov , Nakagami , Weibull, and the Von-Mises  distributions. Multivariate distributions such as the multivariate Normal, Multinomial, Independent , Joint and Mixture distributions. |
+| Hypothesis Tests | More than 35 statistical hypothesis tests , including one way and two-way ANOVA tests, non-parametric tests such as the Kolmogorov-Smirnov test and the Sign Test for the Median , contingency table tests such as the Kappa test , with variations for multiple tables, as well as the Bhapkar and Bowker tests; and the more traditional Chi-Square, Z , F , T and Wald tests. |
+|  Kernel Methods  | Kernel Support Vector Machines , Multi-class and Multi-label machines , Sequential Minimal Optimization , Least-Squares Learning , probabilistic learning , including special methods for linear machines such as LIBLINEAR's methods for Linear Coordinate Descent , Linear Newton Method , Probabilistic Coordinate Descent, Probabilistic Coordinate Descent in the Dual , Probabilistic Newton Method for L1 and L2 machines in both the dual and primal formulations. |
+|     Imaging      | Interest and feature point detectors such as Harris, FREAK , SURF , and FAST . Grey-level Co-occurrence matrices , Border following , Bag-of-Visual-Words (BoW) , RANSAC-based homography estimation , integral images , haralick textural feature extraction , and dense descriptors such as histogram of oriented gradients (HOG) and Local Binary Pattern (LBP) . Several image filters for image processing applications such as difference of Gaussians , Gabor , Niblack and Sauvola thresholding . |
+| Audio and Signal   | Load, parse, save, filter and transform audio signals, such as applying audio processing filters in both space and frequency domain . WAV files , audio capture , time-domain filters such as envelope , high-pass , low-pass , wave rectification filters. Frequency-domain operators such as differential rectification filter and comb filter with Dirac's delta functions . Signal generators for Cosine , Impulse , Square signals. g |
+|      Vision      | Real-time face detection and tracking , as well as general methods for detecting, tracking and transforming objects in image streams. Contains cascade definitions, Camshift and Dynamic Template Matching trackers. Includes pre-created  classifiers for human  faces and some facial features such as noses. |
 
----
+# Performance
+
+As the article mentioned above, **Accord.NET Framework** is a .NET machine learning framework combined with audio and image processing libraries. Therefore we will evaluate its performance from the following aspects: AI, and Imaging. And we will show its strengths and weaknesses compared to his competitors.
+
+## When dealing with AI
+
+At first, lets see some mainstream frameworks and libraries of learning AI.
+
+###1.TensorFlow -"Computation using data flow graphs for scalable machine learning." 
+
+Language:  C++ or Python
+
+TensorFlow is an open-source software for carrying out numerical computations using data flow graphs. This framework is known for having an architecture that allows computation on any CPU or GPU, be it a desktop, a server, or even a mobile device. This framework is available in the Python programming language. 
+
+**Pros**:
+
+- Uses an easy-to-learn a language (Python).
+- Uses computational graph abstraction.
+- Availability of TensorBoard for visualization.
+
+**Cons**:
+
+- It's slow, as Python is not the fastest of languages.
+- Lack of many pre-trained models.
+- Not completely open-source.
+
+###2.Microsoft CNTK - "An open source-deep learning toolkit." 
+
+Language: C++
+
+We could call this Microsoft's response to Google's TensorFlow.
+
+Microsoft's Computational Network ToolKit is a library that enhances the modularization and the maintenance of separating computation networks, providing learning algorithms and model descriptions. CNTK can take advantage of many servers at the same time in a case where lots of servers are needed for operations. It is said to be close in functionality to Google's TensorFlow; however, it is a bit speedier. 
+
+**Pros**:
+
+- It is very flexible.
+- Allows for distributed training.
+- Supports C++, C#, Java, and Python.
+
+**Cons**:
+
+- It is implemented in a new language, Network Description Language (NDL).
+- Lack of visualizations.
+
+Now lets see the protagonist of our article: Accord.NET
+
+###3.Accord.NET - Machine learning, computer vision, statistics, and general scientific computing for .NET." Language: C#.
+
+Here is one for the C# programmers.
+
+The Accord.NET framework is a.NET machine learning framework that makes audio and image processing easy.
+
+This framework can efficiently handle numerical optimization, artificial neural networks, and even visualization. Aside from this, Accord.NET is powerful for computer vision and signal processing and also makes for an easy implementation of algorithms. 
+
+**Pros**:
+
+- It has a large and active development team.
+- Very well-documented framework.
+- Quality visualization.
+
+**Cons**:
+
+- Not a very popular framework.
+- Slow compared to TensorFlow.
+
+These libraries discussed above are very efficient and have proven over time to be of high quality. Big companies like Facebook, Google, Yahoo, Apple, and Microsoft make use of some of these libraries for their deep learning and machine learning projects 
+
+## When dealing with imaging
+
+Currently, more well-known and fully functional image processing libraries are OpenCv, EmguCv, AForge.NET/Accord.NET, etc. So the following will compare the performance of these framework.
+
+From the point of view of whether it is easy to use: (it's purely personal opinion)
+
+| Libraries  | easy to use or not | comments                                                     |
+| ---------- | ------------------ | ------------------------------------------------------------ |
+| OpenCv     | not very good      | Most of OpenCv's features are provided as C-style functions, and a few of them are provided in C++ classes. Note: Version 2.0 packs more features into classes. |
+| EmguCv     | ordinary           | EmguCv wraps most of OpenCv's functionality into .net classes, structures, or enumerations. However, the documentation is not complete, you still have to look at the OpenCv documentation.( EmguCv is built on OpenCv). |
+| Accord.NET | good               | The pure .net class library is very convenient to use.       |
+
+In order to know the real performance of the Accord.NET, we try to do some experiments but we don't get very effective outcome. Luckily we found an IT freelancer who did the test and get accurate answer. The following is the test and it's result.
+
+These libraries can do a lot of things. We chose the most basic part for performance testing, which is to convert a color image into a grayscale image and then convert the grayscale image into a binary image. Because image processing is used for memory reading and writing and operations (especially matrix operations) most of the time, these two operations are somewhat representative. 
+
+We realized the grayscale and binarization of the image in the following ways: (1) C language calls OpenCv library; (2) C# calls Accord.net library; (3) C# calls EmguCv library; (4) C# The form of P/INVOKE calls the OpenCv function.(The specific code is not displayed here.).
+
+The above four forms were respectively processed 10 times, and the running time was recorded and the maximum and minimum data of each type were removed, and the average value was calculated. 
+
+*The result is as follows (in milliseconds):*
+
+| language | library          | Grayscale | Binarization | rank |
+| -------- | ---------------- | --------- | ------------ | ---- |
+| C        | OpenCv           | 16.89721  | 7.807766     | 1    |
+| C#       | Accord.NET       | 48.9403   | 25.32473     | 4    |
+| C#       | EmguCv           | 18.86898  | 13.74628     | 3    |
+| C#       | OpenCv(P/Invoke) | 18.68938  | 10.014       | 2    |
+
+We can see that it does not have such a big advantage compared to a specialized image processing library(OpenCv and EmguCv). Accord is applicable and very nice, but still slow in speedy applications than OpenCv. (in some cases e.g. acquiring Image Data, image processing like perform filters is very slow.) This test was done years ago, and the outcome was affected by many factors such as hardware. Maybe it will be better after improving these years.
+
+## Why we choose Accord.NET
+
+So after these days learning about this framework, a fundamental question busies my mind for a long time: Why we choose Accord.NET, until existing wrappers for powerful OpenCv in .NET and deep learning libraries like TensorFlow, CNTK (support C#)? We googled about Accord.NET performance comparison (e.g. image processing), key advantages and I've got nothing a satisfy answer. So We ask the the development team about this question. And the originator César Souza answers us:
+
+"Hi, I would say the main point is that Accord.NET has a higher level of abstraction than the libraries you mentioned, and unlike them it is a unified framework where you can treat images, text, audio, under similar interfaces. And those interfaces also happen to depend on very fundamental .NET types such as jagged and multidimensional matrices, so even if you need to interop with other libraries such as OpenCV or CNTK you do not have to rewrite your application from scratch to use them. You can select things to use from Accord.NET and from OpenCV for example (that's part of the reason for the "accord" name).
+
+Also, since the main goal is to offer an unified experience, Accord.NET can eventually be extended to use those libraries. For example, the .Neuro project will soon be updated to use TensorFlow/CNTK under the hood, but hopefully with a simpler API.
+
+If I had to pick an example I would say that Accord.NET is like scikit-learn for Python, except that it also includes more fundamental libraries such as for mathematics and image processing if you need."
+
+
 # Deployment view
 
 The deployment view describes the environment into which the system will be deployed. 

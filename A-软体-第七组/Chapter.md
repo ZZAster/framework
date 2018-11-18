@@ -229,15 +229,25 @@ Accord.NET can be used on Windows, Linux and OS X. It is developed by C#, but th
 ## Third-party dependencies:
 
 **ACE(AccessDatabaseEngine):** It is Microsoft provided which is used to access the database.
+
 **ffmpeg:** A complete, cross-platform solution to record, convert and stream audio and video.
+
 **GhostAPI:** Ghost is a professional publishing platform. This API is used for all data access inside of the Ghost software itself.
+
 **Json.NET:** Json.NET is a popular high-performance JSON framework for .NET.
+
 **libfreenect:** libfreenect is a library for accessing the Microsoft Kinect USB camera.
+
 **msinttypes:** Msinttypes contains two header files. In some Api such as ffmpeg, the using header file is different from what visual studio provides. So it should used these two files.
+
 **SharpDX:** SharpDX is an open-source managed .NET wrapper of the DirectX API.
+
 **SharpZipLib:** Ziplib is a Zip, GZip, Tar and BZip2 library written for the .NET platform.
+
 **NUnit:** NUnit is a unit-testing framework for all .Net languages.
+
 **TeRK:** The TeRK.dll is a .NET assembly, which contains built of TeRK C# types generated from TeRK ICE definition.
+
 **ZedGraph:** ZedGraph is a class library for creating two-dimensional linear, bar and pie charts of arbitrary data.
 
 ## Specialist Knowledge

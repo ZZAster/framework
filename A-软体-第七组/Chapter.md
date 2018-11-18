@@ -222,11 +222,27 @@ In order to realize the functions, Accord.NET has so many algorithms.The main fu
 ---
 # Deployment view
 
-the deployment view describes the environment into which the system will be deployed. 
-For the environment: Accord.NET can be used on Windows, Linux and OS X. It is developed by C#, but that not means it can be only used in a C# project. Accord.NET supports all .NET compatible languages such as VB.NET or C++/CLI. it needs a .NET development environment such as Microsoft Visual Studio. And you can use it after downloading and installing the package. Different functions have different package. You can choose what you need. After that, you can use the package in your project.
-For the third-party dependencies: Accord.NET uses a lot of external standard libraries. 
+The deployment view describes the environment into which the system will be deployed. 
+## Environment: 
+Accord.NET can be used on Windows, Linux and OS X. It is developed by C#, but that not means it can be only used in a C# project. Accord.NET supports all .NET compatible languages such as VB.NET or C++/CLI. it needs a .NET development environment such as Microsoft Visual Studio. And you can use it after downloading and installing the package. Different functions have different package. You can choose what you need. After that, you can use the package in your project.
 
-Specialist Knowledge
+## Third-party dependencies:
+**ACE(AccessDatabaseEngine):** It is Microsoft provided which is used to access the database.
+**ffmpeg:** A complete, cross-platform solution to record, convert and stream audio and video.
+**GhostAPI:** Ghost is a professional publishing platform. This API is used for all data access inside of the Ghost software itself.
+**Json.NET:** Json.NET is a popular high-performance JSON framework for .NET.
+**libfreenect:** libfreenect is a library for accessing the Microsoft Kinect USB camera.
+**msinttypes:** Msinttypes contains two header files. In some Api such as ffmpeg, the using header file is different from what visual studio provides. So it should used these two files.
+**SharpDX:** SharpDX is an open-source managed .NET wrapper of the DirectX API.
+**SharpZipLib:** Ziplib is a Zip, GZip, Tar and BZip2 library written for the .NET platform.
+**NUnit:** NUnit is a unit-testing framework for all .Net languages.
+**TeRK:** The TeRK.dll is a .NET assembly, which contains built of TeRK C# types generated from TeRK ICE definition.
+**ZedGraph:** ZedGraph is a class library for creating two-dimensional linear, bar and pie charts of arbitrary data.
+
+## Specialist Knowledge
+To use Accord.NET some specialist knowledge is required.
+* knowledge of programming in at least one .NET compatible languages.
+* knowledge of how to use the IDE of that language and how to import the package.
 
 ---
 # Evolution	perspective  

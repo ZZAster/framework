@@ -241,6 +241,7 @@ In order to realize the functions, Accord.NET has so many algorithms.The main fu
 | Audio and Signal   | Load, parse, save, filter and transform audio signals, such as applying audio processing filters in both space and frequency domain . WAV files , audio capture , time-domain filters such as envelope , high-pass , low-pass , wave rectification filters. Frequency-domain operators such as differential rectification filter and comb filter with Dirac's delta functions . Signal generators for Cosine , Impulse , Square signals. g |
 |      Vision      | Real-time face detection and tracking , as well as general methods for detecting, tracking and transforming objects in image streams. Contains cascade definitions, Camshift and Dynamic Template Matching trackers. Includes pre-created  classifiers for human  faces and some facial features such as noses. |
 
+---
 # Deployment view
 
 The deployment view describes the environment into which the system will be deployed. 
@@ -290,6 +291,7 @@ Furthermore, the project is near completion form the latest release. Because the
 ![avatar](/Picture-framework/evolutionPerspective.jpg)
 *Figure: The Time Axis of releases*
 
+---
 # Performance
 
 As the article mentioned above, **Accord.NET Framework** is a .NET machine learning framework combined with audio and image processing libraries. Therefore we will evaluate its performance from the following aspects: AI, and Imaging. And we will show its strengths and weaknesses compared to his competitors.

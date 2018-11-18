@@ -220,6 +220,15 @@ In order to realize the functions, Accord.NET has so many algorithms.The main fu
 > * **Vision** - [Real-time face detection ](http://accord-framework.net/docs/html/T_Accord_Vision_Detection_HaarObjectDetector.htm)and [tracking ](http://accord-framework.net/docs/html/T_Accord_Vision_Tracking_Camshift.htm), as well as general methods for [detecting ](http://accord-framework.net/docs/html/T_Accord_Vision_GroupMatching.htm), [tracking ](http://accord-framework.net/docs/html/N_Accord_Vision_Tracking.htm)and [transforming objects in image streams ](http://accord-framework.net/docs/html/N_Accord_Imaging.htm). Contains [cascade definitions ](http://accord-framework.net/docs/html/N_Accord_Vision_Detection_Cascades.htm), [Camshift ](http://accord-framework.net/docs/html/T_Accord_Vision_Tracking_Camshift.htm)and [Dynamic Template Matching trackers ](http://accord-framework.net/docs/html/T_Accord_Vision_Tracking_MatchingTracker.htm). Includes [pre-created classifiers for human faces ](http://accord-framework.net/docs/html/T_Accord_Vision_Detection_Cascades_FaceHaarCascade.htm)and some facial features such as [noses ](http://accord-framework.net/docs/html/T_Accord_Vision_Detection_Cascades_NoseHaarCascade.htm). 
 
 ---
+# Deployment view
+
+the deployment view describes the environment into which the system will be deployed. 
+For the environment: Accord.NET can be used on Windows, Linux and OS X. It is developed by C#, but that not means it can be only used in a C# project. Accord.NET supports all .NET compatible languages such as VB.NET or C++/CLI. it needs a .NET development environment such as Microsoft Visual Studio. And you can use it after downloading and installing the package. Different functions have different package. You can choose what you need. After that, you can use the package in your project.
+For the third-party dependencies: Accord.NET uses a lot of external standard libraries. 
+
+Specialist Knowledge
+
+---
 # Evolution	perspective  
 
 Compared with the first release, Accord.NET has improved much more. And there are totally 15 releases in the Github. It starts from 07-09-2013 to 22-10-2017. As for the version is from 2.10 to 3.8.0. The earlier releases can only be found in the releases notes. The real initial release is on 20-05-2010.  

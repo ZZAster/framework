@@ -228,7 +228,15 @@ The framework is comprised by the set of libraries and sample applications, whic
 ## Logical Layer
 
 In order to realize the functions, Accord.NET has so many algorithms.The main functional algorithms included in the Accord.NET framework are described below by its category. 
+The algorithms can be divided into three types:
 
+* Supervised learning：Classification, Regression, Kernel Methods
+
+* Unsupervised learning：Clustering
+
+* Semi-Supervised Learning: Imaging, Audio and Signal, Vision
+
+*The following is the specific algorithms each type contains:*
 |     Category     | algorithms                                                   |
 | :--------------: | ------------------------------------------------------------ |
 |  Classification  | SVM, Logistic Regression, Decision Trees,  Neural Networks, Deep Learning, Deep Neural Networks, Levenberg-Marquardt with Bayesian Regularization, Restricted Boltzmann Machines, Sequence classification, Hidden Markov Classifiers and Hidden Conditional Random Fields. |
@@ -240,6 +248,27 @@ In order to realize the functions, Accord.NET has so many algorithms.The main fu
 |     Imaging      | Interest and feature point detectors such as Harris, FREAK , SURF , and FAST . Grey-level Co-occurrence matrices , Border following , Bag-of-Visual-Words (BoW) , RANSAC-based homography estimation , integral images , haralick textural feature extraction , and dense descriptors such as histogram of oriented gradients (HOG) and Local Binary Pattern (LBP) . Several image filters for image processing applications such as difference of Gaussians , Gabor , Niblack and Sauvola thresholding . |
 | Audio and Signal   | Load, parse, save, filter and transform audio signals, such as applying audio processing filters in both space and frequency domain . WAV files , audio capture , time-domain filters such as envelope , high-pass , low-pass , wave rectification filters. Frequency-domain operators such as differential rectification filter and comb filter with Dirac's delta functions . Signal generators for Cosine , Impulse , Square signals. g |
 |      Vision      | Real-time face detection and tracking , as well as general methods for detecting, tracking and transforming objects in image streams. Contains cascade definitions, Camshift and Dynamic Template Matching trackers. Includes pre-created  classifiers for human  faces and some facial features such as noses. |
+## Effect of using the Accord.NET
+Let's see some application effects of using Accord.NET:
+
+1.Spectrum analyzer (Fourier)
+
+The Fourier sample application shows how to capture sounds from a capture device (such as a microphone jack) using the Accord.NET Framework. The signal can be analyzed, processed and transformed using the framework's Fourier and Hilbert transform functions. 
+
+![](https://raw.githubusercontent.com/ZZAster/framework/development/A-%E8%BD%AF%E4%BD%93-%E7%AC%AC%E4%B8%83%E7%BB%84/Picture-framework/case1.png)
+
+2Clustering (Gaussian Mixture Models)
+
+This sample application shows how to use  to Gaussian Mixture Models perform clustering and classification using soft-decision margins.
+
+![](https://raw.githubusercontent.com/ZZAster/framework/development/A-%E8%BD%AF%E4%BD%93-%E7%AC%AC%E4%B8%83%E7%BB%84/Picture-framework/case2.png)
+
+3.Face Detection (Haar object detector)
+
+Face detection using the Face detection based in Haar-like rectangular features method often known as the Viola-Jones method .
+
+![](https://raw.githubusercontent.com/ZZAster/framework/development/A-%E8%BD%AF%E4%BD%93-%E7%AC%AC%E4%B8%83%E7%BB%84/Picture-framework/case3.png)
+
 
 ---
 # Deployment view

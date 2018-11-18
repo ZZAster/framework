@@ -227,6 +227,7 @@ The deployment view describes the environment into which the system will be depl
 Accord.NET can be used on Windows, Linux and OS X. It is developed by C#, but that not means it can be only used in a C# project. Accord.NET supports all .NET compatible languages such as VB.NET or C++/CLI. it needs a .NET development environment such as Microsoft Visual Studio. And you can use it after downloading and installing the package. Different functions have different package. You can choose what you need. After that, you can use the package in your project.
 
 ## Third-party dependencies:
+
 **ACE(AccessDatabaseEngine):** It is Microsoft provided which is used to access the database.
 **ffmpeg:** A complete, cross-platform solution to record, convert and stream audio and video.
 **GhostAPI:** Ghost is a professional publishing platform. This API is used for all data access inside of the Ghost software itself.

@@ -237,6 +237,7 @@ The algorithms can be divided into three types:
 * Semi-Supervised Learning: Imaging, Audio and Signal, Vision
 
 *The following is the specific algorithms each type contains:*
+
 |     Category     | algorithms                                                   |
 | :--------------: | ------------------------------------------------------------ |
 |  Classification  | SVM, Logistic Regression, Decision Trees,  Neural Networks, Deep Learning, Deep Neural Networks, Levenberg-Marquardt with Bayesian Regularization, Restricted Boltzmann Machines, Sequence classification, Hidden Markov Classifiers and Hidden Conditional Random Fields. |

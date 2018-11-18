@@ -241,6 +241,55 @@ In order to realize the functions, Accord.NET has so many algorithms.The main fu
 | Audio and Signal   | Load, parse, save, filter and transform audio signals, such as applying audio processing filters in both space and frequency domain . WAV files , audio capture , time-domain filters such as envelope , high-pass , low-pass , wave rectification filters. Frequency-domain operators such as differential rectification filter and comb filter with Dirac's delta functions . Signal generators for Cosine , Impulse , Square signals. g |
 |      Vision      | Real-time face detection and tracking , as well as general methods for detecting, tracking and transforming objects in image streams. Contains cascade definitions, Camshift and Dynamic Template Matching trackers. Includes pre-created  classifiers for human  faces and some facial features such as noses. |
 
+# Deployment view
+
+The deployment view describes the environment into which the system will be deployed. 
+## Environment: 
+Accord.NET can be used on Windows, Linux and OS X. It is developed by C#, but that not means it can be only used in a C# project. Accord.NET supports all .NET compatible languages such as VB.NET or C++/CLI. It needs a .NET development environment such as Microsoft Visual Studio. And you can use it after downloading and installing the package. Different functions have different package. You can choose what you need. After that, you can use the package in your project.
+
+## Third-party dependencies:
+
+**ACE(AccessDatabaseEngine):** It is Microsoft provided which is used to access the database.
+
+**ffmpeg:** A complete, cross-platform solution to record, convert and stream audio and video.
+
+**GhostAPI:** Ghost is a professional publishing platform. This API is used for all data access inside of the Ghost software itself.
+
+**Json.NET:** Json.NET is a popular high-performance JSON framework for .NET.
+
+**libfreenect:** libfreenect is a library for accessing the Microsoft Kinect USB camera.
+
+**msinttypes:** Msinttypes contains two header files. In some Api such as ffmpeg, the using header file is different from what visual studio provides. So it should used these two files.
+
+**SharpDX:** SharpDX is an open-source managed .NET wrapper of the DirectX API.
+
+**SharpZipLib:** Ziplib is a Zip, GZip, Tar and BZip2 library written for the .NET platform.
+
+**NUnit:** NUnit is a unit-testing framework for all .Net languages.
+
+**TeRK:** The TeRK.dll is a .NET assembly, which contains built of TeRK C# types generated from TeRK ICE definition.
+
+**ZedGraph:** ZedGraph is a class library for creating two-dimensional linear, bar and pie charts of arbitrary data.
+
+## Specialist Knowledge
+To use Accord.NET some specialist knowledge is required.
+* knowledge of programming in at least one .NET compatible languages.
+* knowledge of how to use the IDE of that language and how to import the package.
+
+---
+# Evolution	perspective  
+
+Compared with the first release, Accord.NET has improved much more. And there are totally 15 releases in the Github. It starts from 07-09-2013 to 22-10-2017. As for the version is from 2.10 to 3.8.0. The earlier releases can only be found in the releases notes. The real initial release is on 20-05-2010.  
+The first release is Accord.NET Framework 2.0.0. It's based on the AForge.NET. What it does is provide a series of fundamental libraries, determining the ooriginal form of the project. Between 2.0.0 and 3.0.0, there are several releases used to update the libraries by adding new features and fix bugs. But the developing team concentrates more attention on adding new features.  
+Take 2.14.0 for an example, the release only fixes a bug, and add many new features like Taylor series functions and dissimilarity functions. But sometime it will also provide improvements to the documentation and standrad bug-fixing.  
+One of the most important releases is on 30-8-2014. 2.13.1  
+replaces SlimDX libraries with SharpDX. That means that the framework can be run into more platforms. That's really a big change. In addition, Two new assemblies have also been created to further accommodate future framework extensions, such as a dedicate matrix format library, and an additional library for math algorithms that are not available under the LGPL.  
+On 16-8-2015 the Accord.NET 3.0.0 is released. The most important update is that Accord.NET merge with AForge.NET.This release marks a milestone in the Accord.NET Framework. Starting from this release, the AForge.NET Framework has been incorporated directly in the project. In addition, it provides most of the AForge.NET namespaces unchanged and help projects use the AForge.NET framework to make the transition to Accord.NET more easily. This means that this specific version of Accord.NET Framework can be used as drop-in replacement in any project currently using the AForge.NET Framework and that is willing to upgrade to Accord.NET sometime in the future. It's really a good news for the users of AForge.NET.  
+According to the recent releases, we can see that the team focus on MachineLearning. These releases updates many algorithms like K-Medoids (PAM) and Voronoi Iteration clustering algorithms. In addition, they add support for OS X targetting NET Standard 1.4, fix target framework versions and add some new namespace.   
+Furthermore, the project is near completion form the latest release. Because they begin making last improvements to documentations, adding supprot for VS2017 and targetting several version of .NET Framework. And they fix some important bugs. At the same time the libsonly script is now in RAR4 format instead of RAR5 so they will not be listed as corrupted files by Linux/MacOSX decompressors.  
+![avatar](/Picture-framework/evolutionPerspective.jpg)
+*Figure: The Time Axis of releases*
+
 # Performance
 
 As the article mentioned above, **Accord.NET Framework** is a .NET machine learning framework combined with audio and image processing libraries. Therefore we will evaluate its performance from the following aspects: AI, and Imaging. And we will show its strengths and weaknesses compared to his competitors.
@@ -249,7 +298,7 @@ As the article mentioned above, **Accord.NET Framework** is a .NET machine lea
 
 At first, lets see some mainstream frameworks and libraries of learning AI.
 
-###1.TensorFlow -"Computation using data flow graphs for scalable machine learning." 
+### 1.TensorFlow -"Computation using data flow graphs for scalable machine learning." 
 
 Language:  C++ or Python
 
@@ -267,7 +316,7 @@ TensorFlow is an open-source software for carrying out numerical computations us
 - Lack of many pre-trained models.
 - Not completely open-source.
 
-###2.Microsoft CNTK - "An open source-deep learning toolkit." 
+### 2.Microsoft CNTK - "An open source-deep learning toolkit." 
 
 Language: C++
 
@@ -288,7 +337,7 @@ Microsoft's Computational Network ToolKit is a library that enhances the modular
 
 Now lets see the protagonist of our article: Accord.NET
 
-###3.Accord.NET - Machine learning, computer vision, statistics, and general scientific computing for .NET." Language: C#.
+### 3.Accord.NET - Machine learning, computer vision, statistics, and general scientific computing for .NET." Language: C#.
 
 Here is one for the C# programmers.
 
@@ -350,58 +399,17 @@ Also, since the main goal is to offer an unified experience, Accord.NET can even
 
 If I had to pick an example I would say that Accord.NET is like scikit-learn for Python, except that it also includes more fundamental libraries such as for mathematics and image processing if you need."
 
-
-# Deployment view
-
-The deployment view describes the environment into which the system will be deployed. 
-## Environment: 
-Accord.NET can be used on Windows, Linux and OS X. It is developed by C#, but that not means it can be only used in a C# project. Accord.NET supports all .NET compatible languages such as VB.NET or C++/CLI. It needs a .NET development environment such as Microsoft Visual Studio. And you can use it after downloading and installing the package. Different functions have different package. You can choose what you need. After that, you can use the package in your project.
-
-## Third-party dependencies:
-
-**ACE(AccessDatabaseEngine):** It is Microsoft provided which is used to access the database.
-
-**ffmpeg:** A complete, cross-platform solution to record, convert and stream audio and video.
-
-**GhostAPI:** Ghost is a professional publishing platform. This API is used for all data access inside of the Ghost software itself.
-
-**Json.NET:** Json.NET is a popular high-performance JSON framework for .NET.
-
-**libfreenect:** libfreenect is a library for accessing the Microsoft Kinect USB camera.
-
-**msinttypes:** Msinttypes contains two header files. In some Api such as ffmpeg, the using header file is different from what visual studio provides. So it should used these two files.
-
-**SharpDX:** SharpDX is an open-source managed .NET wrapper of the DirectX API.
-
-**SharpZipLib:** Ziplib is a Zip, GZip, Tar and BZip2 library written for the .NET platform.
-
-**NUnit:** NUnit is a unit-testing framework for all .Net languages.
-
-**TeRK:** The TeRK.dll is a .NET assembly, which contains built of TeRK C# types generated from TeRK ICE definition.
-
-**ZedGraph:** ZedGraph is a class library for creating two-dimensional linear, bar and pie charts of arbitrary data.
-
-## Specialist Knowledge
-To use Accord.NET some specialist knowledge is required.
-* knowledge of programming in at least one .NET compatible languages.
-* knowledge of how to use the IDE of that language and how to import the package.
-
----
-# Evolution	perspective  
-
-Compared with the first release, Accord.NET has improved much more. And there are totally 15 releases in the Github. It starts from 07-09-2013 to 22-10-2017. As for the version is from 2.10 to 3.8.0. The earlier releases can only be found in the releases notes. The real initial release is on 20-05-2010.  
-The first release is Accord.NET Framework 2.0.0. It's based on the AForge.NET. What it does is provide a series of fundamental libraries, determining the ooriginal form of the project. Between 2.0.0 and 3.0.0, there are several releases used to update the libraries by adding new features and fix bugs. But the developing team concentrates more attention on adding new features.  
-Take 2.14.0 for an example, the release only fixes a bug, and add many new features like Taylor series functions and dissimilarity functions. But sometime it will also provide improvements to the documentation and standrad bug-fixing.  
-One of the most important releases is on 30-8-2014. 2.13.1  
-replaces SlimDX libraries with SharpDX. That means that the framework can be run into more platforms. That's really a big change. In addition, Two new assemblies have also been created to further accommodate future framework extensions, such as a dedicate matrix format library, and an additional library for math algorithms that are not available under the LGPL.  
-On 16-8-2015 the Accord.NET 3.0.0 is released. The most important update is that Accord.NET merge with AForge.NET.This release marks a milestone in the Accord.NET Framework. Starting from this release, the AForge.NET Framework has been incorporated directly in the project. In addition, it provides most of the AForge.NET namespaces unchanged and help projects use the AForge.NET framework to make the transition to Accord.NET more easily. This means that this specific version of Accord.NET Framework can be used as drop-in replacement in any project currently using the AForge.NET Framework and that is willing to upgrade to Accord.NET sometime in the future. It's really a good news for the users of AForge.NET.  
-According to the recent releases, we can see that the team focus on MachineLearning. These releases updates many algorithms like K-Medoids (PAM) and Voronoi Iteration clustering algorithms. In addition, they add support for OS X targetting NET Standard 1.4, fix target framework versions and add some new namespace.   
-Furthermore, the project is near completion form the latest release. Because they begin making last improvements to documentations, adding supprot for VS2017 and targetting several version of .NET Framework. And they fix some important bugs. At the same time the libsonly script is now in RAR4 format instead of RAR5 so they will not be listed as corrupted files by Linux/MacOSX decompressors.  
-![avatar](/Picture-framework/evolutionPerspective.jpg)
-*Figure: The Time Axis of releases*
-
 ---
 # References
 1. Wikipedia - Accord.NET.<br>
 
 2. Accord.NET Framework's Official Website.<br>
+
+3.[10 Best Frameworks and Libraries for AI](https://dzone.com/articles/progressive-tools10-best-frameworks-and-libraries)
+
+4.https://gitter.im/accord-net/framework
+
+5.[Accord.NET Framework for Windows Store, Windows Phone and WPF](https://groups.google.com/forum/#!topic/accord-net/XSJE_NJxKuU)
+
+6.[The Comparison of Image Processing Libraries)](https://www.cnblogs.com/janghe/p/9759066.html)
+

@@ -326,7 +326,7 @@ On 16-8-2015 the Accord.NET 3.0.0 is released. The most important update is that
 ### The completion of Accord.NET Framework 
 According to the recent releases, we can see that the team focus on MachineLearning. These releases updates many algorithms like K-Medoids (PAM) and Voronoi Iteration clustering algorithms. In addition, they add support for OS X targetting NET Standard 1.4, fix target framework versions and add some new namespace.   
 Furthermore, the project is near completion form the latest release. Because they begin making last improvements to documentations, adding supprot for VS2017 and targetting several version of .NET Framework. And they fix some important bugs. At the same time the libsonly script is now in RAR4 format instead of RAR5 so they will not be listed as corrupted files by Linux/MacOSX decompressors.  
-![avatar](/Picture-framework/evolutionPerspective.jpg)
+![Structure](https://raw.githubusercontent.com/ZZAster/framework/development/A-%E8%BD%AF%E4%BD%93-%E7%AC%AC%E4%B8%83%E7%BB%84/Picture-framework/evolutionPerspective.jpg)
 *Figure: The Time Axis of releases*
 
 ---

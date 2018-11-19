@@ -402,7 +402,7 @@ These libraries discussed above are very efficient and have proven over time to 
 
 Currently, more well-known and fully functional image processing libraries are OpenCv, EmguCv, AForge.NET/Accord.NET, etc. So the following will compare the performance of these framework.
 
-From the point of view of whether it is easy to use: (it's purely personal opinion)
+From the point of view of whether it is easy to use: (it's pure personal opinion)
 
 | Libraries  | easy to use or not | comments                                                     |
 | ---------- | ------------------ | ------------------------------------------------------------ |
@@ -447,7 +447,7 @@ If I had to pick an example I would say that Accord.NET is like scikit-learn for
 
 3.[10 Best Frameworks and Libraries for AI](https://dzone.com/articles/progressive-tools10-best-frameworks-and-libraries)
 
-4.https://gitter.im/accord-net/framework
+4.[Gitter:Where communities thrive](https://gitter.im/accord-net/framework)
 
 5.[Accord.NET Framework for Windows Store, Windows Phone and WPF](https://groups.google.com/forum/#!topic/accord-net/XSJE_NJxKuU)
 

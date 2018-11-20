@@ -274,13 +274,13 @@ Face detection using the Face detection based in Haar-like rectangular features 
 ---
 # Development View
 
-We will now take a closer look to the architecture that support the Accord.NET framework's development progress. At first, we will describe the common design principle of this framework. Then we will analyze the code orginization and module structure model.
+We will now take a closer look to the architecture that support the Accord.NET framework's development progress. At first, we will describe the common design principle of this framework. Then we will analyze the code organization and module structure model.
 
 ## Common Design Models
 This section describe the standlarize and common design that are used in the development of Accord.NET framework.
 
 ### Contributing
-Please send pull requests against the development branch instead of master. The master branch is reserved to contain only the latest official public release of the framework.
+Developers should send pull requests against the development branch instead of master. The master branch is reserved to contain only the latest official public release of the framework.
 
 ### Please stick to C# 4.0
 If possible, when contributing code to the framework, please avoid using C# language features from above C# 4.0. There are at least two reasons for this restriction:
@@ -293,6 +293,26 @@ Please use the same code formatting style as the default format offered by Visua
 
 ### Contributor Covenant Code of Conduct
 Accord.NET framework's Code of Conduct is adapted from the Contributor Covenant, version 1.4, which is available at contributor-covenant's official site.
+
+## Codeline Organization
+The project's code functionality can be divided into four larfe section by their rules which are showed in Figure 9.
+
+![Codeline Organization](picture-framework/code-organization.png)  
+_**Figure 9.** Codeline Organization of Accord.NET Framework_
+
+### Funcitonality
+The functionality section contains the various components that implement the project's functionality. The External folder contains the third-party software interfaces that are used for supporting the code of project functions. And the Source folder contains the code implementation of the algorithm library provided by the Accord.NET Framework, which is the source code for the project.
+
+### Development & Development
+The development and deployment section contains the code to supplement, develop, and test the entire project. These codes are primarily used to help improve and maintain Accord.NET without affecting the functionality of the project. The Set Up folder contains the packages that help developers use when installing the project, and the Samples file contains the use cases that testers have written for the various features of Accord.NET. The Tools folder contains code and tools for performance testing and debugging of the project. The Unit Tests folder contains code for the unit testing portion of the project.
+
+### Documents
+The documents section contains information about the project. For example, all version updates for the project are documented in the relase note document. CONTRIBUTING and CODE_OF_CONDUCT describe the standard specifications that developers must follow when adding code.
+
+### Miscellanenous
+This section contains other files that are not related to the project structure on github.
+
+## Module Structure Model
 
 
 ---

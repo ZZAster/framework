@@ -272,7 +272,31 @@ Face detection using the Face detection based in Haar-like rectangular features 
 
 
 ---
-# Deployment view
+# Development View
+
+We will now take a closer look to the architecture that support the Accord.NET framework's development progress. At first, we will describe the common design principle of this framework. Then we will analyze the code orginization and module structure model.
+
+## Common Design Models
+This section describe the standlarize and common design that are used in the development of Accord.NET framework.
+
+### Contributing
+Please send pull requests against the development branch instead of master. The master branch is reserved to contain only the latest official public release of the framework.
+
+### Please stick to C# 4.0
+If possible, when contributing code to the framework, please avoid using C# language features from above C# 4.0. There are at least two reasons for this restriction:
+
+ 1. **Mono:** To keep compatibility with the most widespread versions of Mono (4.x). If you take a look at our Travis-CI builds, you might see that the builds are actually done and run using Mono, so using any language feature that is not supported there will cause a failing build;
+ 1. **Unity:** Some language features might not be accessible when targeting .NET 3.5, which for a long time has been the only .NET Framework version that could be run from inside [Unity](https://unity3d.com).
+ 
+ ### Code formatting
+Please use the same code formatting style as the default format offered by Visual Studio. This is the style that Visual Studio will format your code with when pressing Ctrl+E, D while in the editor.
+
+### Contributor Covenant Code of Conduct
+Accord.NET framework's Code of Conduct is adapted from the Contributor Covenant, version 1.4, which is available at contributor-covenant's official site.
+
+
+---
+# Deployment View
 
 The deployment view describes the environment into which the system will be deployed. 
 ## Environment: 

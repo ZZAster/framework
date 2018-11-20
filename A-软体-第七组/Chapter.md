@@ -297,7 +297,7 @@ Accord.NET framework's Code of Conduct is adapted from the Contributor Covenant,
 ## Codeline Organization
 The project's code functionality can be divided into four larfe section by their rules which are showed in Figure 9.
 
-![Codeline Organization](picture-framework/code-organization.png)  
+![Codeline Organization](picture-framework/code-organization.jpg)  
 _**Figure 9.** Codeline Organization of Accord.NET Framework_
 
 ### Funcitonality

@@ -313,7 +313,34 @@ The documents section contains information about the project. For example, all v
 This section contains other files that are not related to the project structure on github.
 
 ## Module Structure Model
+As a machine learning framework, the source code of Accord.NET can be organized as module structure. And these modules can be divided into three major parts: Internal module, External modeule and Testing module.
 
+### Internal module
+As an algorithmic framework, Accord.NET's internal modules mainly include functional modules for handling various problems, such as image and audio processing. Here are some of the more important functional modules.
+
+- Audio<br>
+
+- Imaging<br>
+
+- MachineLearning<br>
+
+- Math<br>
+
+- Statistics<br>
+
+- Vision<br>
+
+
+### Testing module
+This part contains two major module used to help developers maintain the project, which are explained below:
+
+- Unit Tests<br>
+
+- Tools<br>
+
+
+### External module
+In order to better implement some algorithm modules, Accord.NET has established many external dependencies, such as ZedGraph, FFmpeg and so on.
 
 ---
 # Deployment View

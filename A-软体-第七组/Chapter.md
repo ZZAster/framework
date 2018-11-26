@@ -209,8 +209,7 @@ Accord.NET uses a lot of auxiliary software to help implementing its functions, 
 The framework is comprised by the set of libraries and sample applications, which demonstrate their features, and the Accord.NET framework implement it's function dependent on these libraries.
 
 ![Structure](https://raw.githubusercontent.com/ZZAster/framework/development/A-%E8%BD%AF%E4%BD%93-%E7%AC%AC%E4%B8%83%E7%BB%84/Picture-framework/Structure.png)
-
-*Graph: the internal structure of Accord.NET.*
+_**Figure 4.** internal structure of Accord.NET_
 
 > * **Accord.Math** - Contains a matrix extension library, along with a suite of numerical matrix decomposition methods, numerical optimization algorithms for constrained and unconstrained problems, special functions and other tools for scientific applications.
 > * **Accord.Statistics** - Contains probability distributions, hypothesis testing, statistical models and methods such as Linear and Logistic regression, Hidden Markov Models, (Hidden) Conditional Random Fields, Principal Component Analysis, Partial Least Squares, Discriminant Analysis, Kernel methods and many other related techniques.
@@ -259,19 +258,21 @@ Let's see some application effects of using Accord.NET:
 The Fourier sample application shows how to capture sounds from a capture device (such as a microphone jack) using the Accord.NET Framework. The signal can be analyzed, processed and transformed using the framework's Fourier and Hilbert transform functions. 
 
 ![](https://raw.githubusercontent.com/ZZAster/framework/development/A-%E8%BD%AF%E4%BD%93-%E7%AC%AC%E4%B8%83%E7%BB%84/Picture-framework/case1.png)
+_**Figure 5.** output of Fourier sample application_
 
 2Clustering (Gaussian Mixture Models)
 
 This sample application shows how to use  to Gaussian Mixture Models perform clustering and classification using soft-decision margins.
 
 ![](https://raw.githubusercontent.com/ZZAster/framework/development/A-%E8%BD%AF%E4%BD%93-%E7%AC%AC%E4%B8%83%E7%BB%84/Picture-framework/case2.png)
+_**Figure 6.** output of Clusting sample application_
 
 3.Face Detection (Haar object detector)
 
 Face detection using the Face detection based in Haar-like rectangular features method often known as the Viola-Jones method .
 
 ![](https://raw.githubusercontent.com/ZZAster/framework/development/A-%E8%BD%AF%E4%BD%93-%E7%AC%AC%E4%B8%83%E7%BB%84/Picture-framework/case3.png)
-
+_**Figure 7.** output of Face Detection sample application_
 
 ---
 # Development View
@@ -300,7 +301,7 @@ Accord.NET framework's Code of Conduct is adapted from the Contributor Covenant,
 The project's code functionality can be divided into four larfe section by their rules which are showed in Figure 9.
 
 ![Codeline Organization](https://github.com/ZZAster/framework/blob/development/A-%E8%BD%AF%E4%BD%93-%E7%AC%AC%E4%B8%83%E7%BB%84/Picture-framework/codeline-organization.jpg)  
-_**Figure 9.** Codeline Organization of Accord.NET Framework_
+_**Figure 8.** Codeline Organization of Accord.NET Framework_
 
 ### Funcitonality
 The functionality section contains the various components that implement the project's functionality. The External folder contains the third-party software interfaces that are used for supporting the code of project functions. And the Source folder contains the code implementation of the algorithm library provided by the Accord.NET Framework, which is the source code for the project.

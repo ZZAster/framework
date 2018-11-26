@@ -278,7 +278,7 @@ Face detection using the Face detection based in Haar-like rectangular features 
 
 We will now take a closer look to the architecture that support the Accord.NET framework's development progress. At first, we will describe the common design principle of this framework. Then we will analyze the code organization and module structure model.
 
-## Common Design Models
+## Common Design Principle
 This section describe the standlarize and common design that are used in the development of Accord.NET framework.
 
 ### Contributing
@@ -526,5 +526,5 @@ All in all, Accord.NET is still the most suitable framework for C# developers to
 
 5. [Accord.NET Framework for Windows Store, Windows Phone and WPF](https://groups.google.com/forum/#!topic/accord-net/XSJE_NJxKuU)
 
-6. [The Comparison of Image Processing Libraries)](https://www.cnblogs.com/janghe/p/9759066.html)
+6. [The Comparison of Image Processing Libraries](https://www.cnblogs.com/janghe/p/9759066.html)
 

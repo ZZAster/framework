@@ -12,14 +12,16 @@ This chapter aims to provide several different point of views to this software's
 
 ---
 # Table of Contents
-- Intruduction
-- Stackholder
-- Context View
-- Funcition View
-- ...(some views)
-- Evolution Perspective
-- Conclution
-- Referencies
+1. [Intruduction](https://github.com/ZZAster/framework/blob/development/A-%E8%BD%AF%E4%BD%93-%E7%AC%AC%E4%B8%83%E7%BB%84/Chapter.md#introduction)
+2. [Stackholder](https://github.com/ZZAster/framework/blob/development/A-%E8%BD%AF%E4%BD%93-%E7%AC%AC%E4%B8%83%E7%BB%84/Chapter.md#stakeholders)
+3. [Context View](https://github.com/ZZAster/framework/blob/development/A-%E8%BD%AF%E4%BD%93-%E7%AC%AC%E4%B8%83%E7%BB%84/Chapter.md#context-view)
+4. [Funcition View](https://github.com/ZZAster/framework/blob/development/A-%E8%BD%AF%E4%BD%93-%E7%AC%AC%E4%B8%83%E7%BB%84/Chapter.md#functional-view)
+5. [Development View](https://github.com/ZZAster/framework/blob/development/A-%E8%BD%AF%E4%BD%93-%E7%AC%AC%E4%B8%83%E7%BB%84/Chapter.md#development-view)
+6. [Deployment View](https://github.com/ZZAster/framework/blob/development/A-%E8%BD%AF%E4%BD%93-%E7%AC%AC%E4%B8%83%E7%BB%84/Chapter.md#deployment-view)
+7. [Evolution Perspective](https://github.com/ZZAster/framework/blob/development/A-%E8%BD%AF%E4%BD%93-%E7%AC%AC%E4%B8%83%E7%BB%84/Chapter.md#evolutionperspective)
+8. [Performance](https://github.com/ZZAster/framework/blob/development/A-%E8%BD%AF%E4%BD%93-%E7%AC%AC%E4%B8%83%E7%BB%84/Chapter.md#performance)
+9. [Conclusion](https://github.com/ZZAster/framework/blob/development/A-%E8%BD%AF%E4%BD%93-%E7%AC%AC%E4%B8%83%E7%BB%84/Chapter.md#conclusion)
+10. [Referencies](https://github.com/ZZAster/framework/blob/development/A-%E8%BD%AF%E4%BD%93-%E7%AC%AC%E4%B8%83%E7%BB%84/Chapter.md#references)
 
 ---
 # Introduction
@@ -316,27 +318,17 @@ This section contains other files that are not related to the project structure 
 As a machine learning framework, the source code of Accord.NET can be organized as module structure. And these modules can be divided into three major parts: Internal module, External modeule and Testing module.
 
 ### Internal module
-As an algorithmic framework, Accord.NET's internal modules mainly include functional modules for handling various problems, such as image and audio processing. Here are some of the more important functional modules.
-
-- Audio<br>
-
-- Imaging<br>
-
-- MachineLearning<br>
-
-- Math<br>
-
-- Statistics<br>
-
-- Vision<br>
+As an algorithmic framework, Accord.NET's internal modules mainly include functional modules for handling various problems, such as image and audio processing. These modules are used to implement the different feature sets of the Accod.NET framework. Each module contains a number of interdependent small modules for numerical processing or data cleaning. Since the project uses the C language interface to improve performance when implementing the basic underlying operations, there is almost no dependency between modules, but the internal modules have dependencies on external modules.
 
 
 ### Testing module
 This part contains two major module used to help developers maintain the project, which are explained below:
 
 - Unit Tests<br>
+This module contains the subprojects which are used to test each module of the project divided by function. And it has dependencies on tools module.
 
 - Tools<br>
+This module deals with the debug and performance test for Accord.NET framework.This module also has dependencies on unit tests module.
 
 
 ### External module
@@ -513,16 +505,26 @@ Also, since the main goal is to offer an unified experience, Accord.NET can even
 If I had to pick an example I would say that Accord.NET is like scikit-learn for Python, except that it also includes more fundamental libraries such as for mathematics and image processing if you need."
 
 ---
+# Conclusion
+Accord.NET is an open source project on machine learning that is more comprehensive and simple to use on the .net platform. Through this 12-week study, we conducted a lot of analysis on this project from the perspective of software architecture, and now we briefly summarize what we have analyzed.
+
+In analyzing the various elements of the software development process, we first discuss the various roles of stakeholders involved in Accord.NET and briefly analyze the role and importance of these roles. Secondly, we show the system scope and external entities of the project through the Context View so that the reader can clearly understand the interaction of various parts of Accord.NET in the environment. Then in the function view, we introduce the overall function of the project and clearly define the level of implementation of these functions. Next, the project design principles, code organization and model organization are discussed in detail in the development view. Finally, the Deployment View describes the environment in which Accord.NET is deployed and details various third-party software and professional knowledge requirements to help users establish a development environment.
+
+Then we analyzed the software performance and version iteration of Accord.NET. First of all, in the perspective of Evolution, we briefly introduced the development history of the project, and listed several more important versions to analyze its content and role in detail. Then in terms of performance, we showed the software that is similar to the function of the Accord.NET project, and compared their performance with a simple program.
+
+All in all, Accord.NET is still the most suitable framework for C# developers to get into the field of machine learning. The shortcoming of this project is mainly inferior to other similar frameworks in terms of performance, but its full-featured and simple-to-use features are ideal for beginners in machine learning.
+
+---
 # References
-1.Wikipedia - Accord.NET.<br>
+1. [Wikipedia - Accord.NET.](https://en.wikipedia.org/wiki/Accord.NET)
 
-2.Accord.NET Framework's Official Website.<br>
+2. [Accord.NET Framework's Official Website.](http://accord-framework.net/)
 
-3.[10 Best Frameworks and Libraries for AI](https://dzone.com/articles/progressive-tools10-best-frameworks-and-libraries)
+3. [10 Best Frameworks and Libraries for AI](https://dzone.com/articles/progressive-tools10-best-frameworks-and-libraries)
 
-4.[Gitter:Where communities thrive](https://gitter.im/accord-net/framework)
+4. [Gitter:Where communities thrive](https://gitter.im/accord-net/framework)
 
-5.[Accord.NET Framework for Windows Store, Windows Phone and WPF](https://groups.google.com/forum/#!topic/accord-net/XSJE_NJxKuU)
+5. [Accord.NET Framework for Windows Store, Windows Phone and WPF](https://groups.google.com/forum/#!topic/accord-net/XSJE_NJxKuU)
 
-6.[The Comparison of Image Processing Libraries)](https://www.cnblogs.com/janghe/p/9759066.html)
+6. [The Comparison of Image Processing Libraries)](https://www.cnblogs.com/janghe/p/9759066.html)
 

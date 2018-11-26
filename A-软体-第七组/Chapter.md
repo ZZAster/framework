@@ -448,7 +448,9 @@ Microsoft's Computational Network ToolKit is a library that enhances the modular
 
 Now lets see the protagonist of our article: Accord.NET
 
-### 3.Accord.NET - Machine learning, computer vision, statistics, and general scientific computing for .NET." Language: C#.
+### 3.Accord.NET - Machine learning, computer vision, statistics, and general scientific computing for .NET." 
+
+Language: C#.
 
 Here is one for the C# programmers.
 
@@ -512,9 +514,9 @@ If I had to pick an example I would say that Accord.NET is like scikit-learn for
 
 ---
 # References
-1. Wikipedia - Accord.NET.<br>
+1.Wikipedia - Accord.NET.<br>
 
-2. Accord.NET Framework's Official Website.<br>
+2.Accord.NET Framework's Official Website.<br>
 
 3.[10 Best Frameworks and Libraries for AI](https://dzone.com/articles/progressive-tools10-best-frameworks-and-libraries)
 
